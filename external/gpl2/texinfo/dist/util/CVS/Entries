@@ -1,0 +1,27 @@
+/Makefile.am/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/Makefile.in/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/README/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/deref.c/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/dir-example/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/fix-info-dir/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/fixfonts/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/fixref.gawk/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/gdoc/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/gen-dir-node/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/gendocs.sh/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/gendocs_template/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/infosrch/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/install-info-html/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/install-info.c/1.2/Thu Jan 14 00:34:53 2016//
+/outline.gawk/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/prepinfo.awk/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/tex3patch/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/texi-docstring-magic.el/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/texi2dvi/1.2/Thu Jan 14 00:34:53 2016//
+/texi2pdf/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/texindex.c/1.2/Thu Jan 14 00:34:53 2016//
+/texinfo-cat.in/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/texinfo.dtd/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/texinfo.xsl/1.1.1.1/Thu Jan 14 00:11:29 2016//
+/txitextest/1.1.1.1/Thu Jan 14 00:11:29 2016//
+D

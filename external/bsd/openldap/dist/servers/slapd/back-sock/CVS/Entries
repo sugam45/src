@@ -1,0 +1,19 @@
+/Makefile.in/1.1.1.8/Tue Aug 11 13:12:15 2020//
+/add.c/1.2/Tue Aug 11 13:15:41 2020//
+/back-sock.h/1.2/Tue Aug 11 13:15:42 2020//
+/bind.c/1.2/Tue Aug 11 13:15:42 2020//
+/compare.c/1.2/Tue Aug 11 13:15:42 2020//
+/config.c/1.2/Tue Aug 11 13:15:42 2020//
+/delete.c/1.2/Tue Aug 11 13:15:42 2020//
+/extended.c/1.2/Tue Aug 11 13:15:42 2020//
+/init.c/1.2/Tue Aug 11 13:15:42 2020//
+/modify.c/1.2/Tue Aug 11 13:15:42 2020//
+/modrdn.c/1.2/Tue Aug 11 13:15:42 2020//
+/opensock.c/1.2/Tue Aug 11 13:15:42 2020//
+/proto-sock.h/1.2/Tue Aug 11 13:15:42 2020//
+/result.c/1.2/Tue Aug 11 13:15:42 2020//
+/search.c/1.2/Tue Aug 11 13:15:42 2020//
+/searchexample.conf/1.1.1.8/Tue Aug 11 13:12:15 2020//
+/searchexample.pl/1.1.1.8/Tue Aug 11 13:12:15 2020//
+/unbind.c/1.2/Tue Aug 11 13:15:42 2020//
+D

@@ -1,0 +1,8 @@
+A D/boot////
+A D/boot_com0////
+A D/boot_vga////
+A D/common////
+A D/elf2pef////
+A D/mkbootimage////
+R D/mkbootimage////
+R D/elf2pef////

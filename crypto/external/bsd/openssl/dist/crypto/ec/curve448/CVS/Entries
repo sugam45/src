@@ -1,0 +1,12 @@
+/curve448.c/1.1.1.3/Sun Mar 22 00:49:08 2020//
+/curve448_local.h/1.1.1.1/Sun Mar 22 00:49:08 2020//
+/curve448_tables.c/1.1.1.2/Sun Jun  9 17:47:43 2019//
+/curve448utils.h/1.1.1.3/Sun Mar 22 00:49:08 2020//
+/ed448.h/1.1.1.2/Sun Mar 22 00:49:08 2020//
+/eddsa.c/1.1.1.3/Sun Mar 22 00:49:08 2020//
+/f_generic.c/1.1.1.2/Sun Jun  9 17:47:43 2019//
+/field.h/1.1.1.2/Sun Mar 22 00:49:08 2020//
+/point_448.h/1.1.1.3/Sun Mar 22 00:49:08 2020//
+/scalar.c/1.1.1.2/Sun Jun  9 17:47:43 2019//
+/word.h/1.1.1.2/Sun Mar 22 00:49:08 2020//
+D

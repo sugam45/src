@@ -1,0 +1,17 @@
+A D/crtstuff////
+A D/libasan////
+A D/libbacktrace////
+A D/libgcc////
+A D/libgomp////
+A D/libiberty////
+A D/liblsan////
+A D/liblto_plugin////
+A D/libmudflap////
+A D/libmudflapth////
+A D/libobjc////
+A D/libstdc++-v3////
+A D/libsupc++////
+A D/libtsan////
+A D/libubsan////
+R D/libmudflapth////
+R D/libmudflap////

@@ -1,0 +1,13 @@
+/Makefile/1.14/Sun Oct 26 14:55:17 2008//
+/display.c/1.16/Tue Mar 20 18:50:31 2012//
+/keyboard.c/1.11/Sun Sep 13 07:35:15 2020//
+/keysym.c/1.10/Fri Jan 29 09:49:34 2010//
+/map_parse.y/1.12/Tue Oct 23 15:30:45 2012//
+/map_scan.l/1.7/Tue May 24 12:07:14 2011//
+/mkkeysym.sh/1.2/Sun Jun 26 22:45:50 2005//
+/mouse.c/1.10/Mon Dec 24 01:29:20 2012//
+/util.c/1.32/Fri Nov 23 06:31:57 2018//
+/wsconsctl.8/1.30/Mon Jul 13 11:14:12 2020//
+/wsconsctl.c/1.19/Fri Nov 23 06:31:57 2018//
+/wsconsctl.h/1.13/Fri Nov 23 06:31:57 2018//
+D

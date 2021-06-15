@@ -1,0 +1,27 @@
+/Makefile/1.11/Tue Oct 29 21:30:42 2019//
+/battlestar.6/1.15/Thu Sep 15 02:09:41 2005//
+/battlestar.c/1.16/Sun Jul 20 01:03:21 2008//
+/command1.c/1.6/Sun May  2 12:50:43 2021//
+/command2.c/1.5/Sun May  2 12:50:43 2021//
+/command3.c/1.6/Sun May  2 12:50:43 2021//
+/command4.c/1.4/Sun May  2 12:50:43 2021//
+/command5.c/1.6/Sun May  2 12:50:43 2021//
+/command6.c/1.9/Sun May  2 12:50:43 2021//
+/command7.c/1.5/Sun May  2 12:50:43 2021//
+/cypher.c/1.24/Sun May  2 12:50:43 2021//
+/dayfile.c/1.12/Thu Aug  7 09:37:01 2003//
+/dayobjs.c/1.9/Thu Aug  7 09:37:01 2003//
+/extern.h/1.36/Sat Mar 22 23:33:33 2014//
+/fly.c/1.16/Sun May  2 12:50:43 2021//
+/getcom.c/1.15/Sun May  2 12:50:43 2021//
+/globals.c/1.20/Sun Dec  6 11:35:27 2020//
+/init.c/1.16/Sat Mar 22 23:33:33 2014//
+/misc.c/1.9/Fri Jul  1 06:04:54 2005//
+/nightfile.c/1.12/Thu Aug  7 09:37:02 2003//
+/nightobjs.c/1.9/Thu Aug  7 09:37:03 2003//
+/parse.c/1.18/Sun May  2 12:50:43 2021//
+/pathnames.h/1.4/Thu Aug  7 09:37:03 2003//
+/room.c/1.15/Sun May  2 12:50:43 2021//
+/save.c/1.12/Fri Jul  1 06:04:54 2005//
+/words.c/1.11/Thu Aug  7 09:37:03 2003//
+D

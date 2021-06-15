@@ -1,0 +1,7 @@
+A D/boot////
+A D/common////
+A D/libsa////
+A D/mbr////
+R D/mbr////
+R D/libsa////
+R D/common////

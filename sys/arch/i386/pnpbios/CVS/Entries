@@ -1,0 +1,19 @@
+/TODO/1.1/Sat Dec 28 20:12:24 2002//
+/atppc_pnpbios.c/1.9/Fri Jul  1 18:14:15 2011//
+/com_pnpbios.c/1.16/Sat Dec  8 17:46:11 2018//
+/ess_pnpbios.c/1.23/Wed May  8 13:40:15 2019//
+/fdc_pnpbios.c/1.19/Mon Jul 11 11:31:49 2016//
+/files.pnpbios/1.18/Sun Jan 26 19:16:17 2014//
+/joy_pnpbios.c/1.15/Sat Nov 26 14:06:44 2011//
+/lm_pnpbios.c/1.15/Fri Jul  1 18:14:15 2011//
+/lpt_pnpbios.c/1.13/Thu Jul 14 10:19:05 2016//
+/pciide_pnpbios.c/1.34/Mon Aug 24 05:37:40 2020//
+/pckbc_pnpbios.c/1.18/Sun Mar 23 02:57:58 2014//
+/pnpbios.c/1.76/Sat Apr 24 23:36:39 2021//
+/pnpbioscall.S/1.3/Sat Jul 14 14:29:40 2018//
+/pnpbiosreg.h/1.4/Tue Dec 25 18:33:33 2007//
+/pnpbiosvar.h/1.12/Thu Jun 30 20:09:31 2011//
+/sb_pnpbios.c/1.18/Wed May  8 13:40:15 2019//
+/wss_pnpbios.c/1.23/Sat Apr 24 23:36:39 2021//
+/ym_pnpbios.c/1.19/Wed May  8 13:40:15 2019//
+D

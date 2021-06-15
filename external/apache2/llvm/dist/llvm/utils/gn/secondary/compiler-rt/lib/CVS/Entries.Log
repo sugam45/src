@@ -1,0 +1,12 @@
+A D/asan////
+A D/builtins////
+A D/cfi////
+A D/hwasan////
+A D/interception////
+A D/lsan////
+A D/msan////
+A D/profile////
+A D/sanitizer_common////
+A D/scudo////
+A D/tsan////
+A D/ubsan////

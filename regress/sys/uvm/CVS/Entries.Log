@@ -1,0 +1,9 @@
+A D/loan1////
+A D/mmap////
+A D/pdsim////
+A D/stack_exec////
+A D/stack_noexec////
+R D/stack_noexec////
+R D/stack_exec////
+R D/mmap////
+R D/loan1////

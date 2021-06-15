@@ -1,0 +1,9 @@
+A D/bootfs////
+A D/cdroms////
+A D/instfs////
+A D/liveimage////
+A D/miniroot////
+A D/ramdisk////
+A D/xminiroot////
+R D/ramdisk////
+R D/miniroot////

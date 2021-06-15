@@ -1,0 +1,11 @@
+/accept_sec_context.c/1.2/Sat Jan 28 21:31:47 2017//
+/compat.c/1.2/Sat Jan 28 21:31:47 2017//
+/context_stubs.c/1.2/Sat Jan 28 21:31:47 2017//
+/cred_stubs.c/1.2/Sat Jan 28 21:31:47 2017//
+/external.c/1.2/Sat Jan 28 21:31:47 2017//
+/init_sec_context.c/1.2/Sat Jan 28 21:31:47 2017//
+/spnego-private.h/1.2/Sun Dec 15 22:50:48 2019//
+/spnego.asn1/1.1.1.2/Thu Apr 14 14:08:30 2011//
+/spnego.opt/1.1.1.1/Wed Apr 13 18:14:48 2011//
+/spnego_locl.h/1.2/Sat Jan 28 21:31:47 2017//
+D

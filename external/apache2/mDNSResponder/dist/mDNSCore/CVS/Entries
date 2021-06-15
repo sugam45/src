@@ -1,0 +1,21 @@
+/CryptoAlg.c/1.1.1.2/Sun Jan 14 19:40:51 2018//
+/CryptoAlg.h/1.1.1.2/Sun Jan 14 19:40:51 2018//
+/DNSCommon.c/1.9/Wed Apr 11 18:33:48 2018//
+/DNSCommon.h/1.2/Wed Apr 11 18:33:48 2018//
+/DNSDigest.c/1.6/Sun Jan 14 20:04:55 2018//
+/anonymous.c/1.1.1.2/Sun Jan 14 19:40:51 2018//
+/anonymous.h/1.1.1.2/Sun Jan 14 19:40:51 2018//
+/dnsproxy.c/1.1.1.2/Sun Jan 14 19:40:51 2018//
+/dnsproxy.h/1.1.1.2/Sun Jan 14 19:40:51 2018//
+/dnssec.c/1.1.1.2/Sun Jan 14 19:40:51 2018//
+/dnssec.h/1.1.1.2/Sun Jan 14 19:40:51 2018//
+/mDNS.c/1.11/Wed Apr 11 18:33:21 2018//
+/mDNSDebug.h/1.2/Sat Apr  7 19:09:12 2018//
+/mDNSEmbeddedAPI.h/1.9/Wed Apr 11 18:33:48 2018//
+/nsec.c/1.1.1.2/Sun Jan 14 19:40:51 2018//
+/nsec.h/1.1.1.2/Sun Jan 14 19:40:51 2018//
+/nsec3.c/1.1.1.2/Sun Jan 14 19:40:51 2018//
+/nsec3.h/1.1.1.2/Sun Jan 14 19:40:51 2018//
+/uDNS.c/1.4/Sun Feb 25 20:04:56 2018//
+/uDNS.h/1.1.1.5/Sun Jan 14 19:40:51 2018//
+D

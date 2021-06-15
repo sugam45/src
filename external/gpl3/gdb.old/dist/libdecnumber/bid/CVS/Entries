@@ -1,0 +1,17 @@
+/bid-dpd.h/1.6/Mon Sep 14 00:40:25 2020//
+/bid2dpd_dpd2bid.c/1.6/Mon Sep 14 00:40:25 2020//
+/bid2dpd_dpd2bid.h/1.6/Mon Sep 14 00:40:25 2020//
+/decimal128.c/1.6/Mon Sep 14 00:40:25 2020//
+/decimal128.h/1.5/Thu Oct 13 01:10:18 2016//
+/decimal128Local.h/1.5/Thu Oct 13 01:10:18 2016//
+/decimal128Symbols.h/1.5/Thu Oct 13 01:10:18 2016//
+/decimal32.c/1.6/Mon Sep 14 00:40:25 2020//
+/decimal32.h/1.5/Thu Oct 13 01:10:18 2016//
+/decimal32Symbols.h/1.5/Thu Oct 13 01:10:18 2016//
+/decimal64.c/1.6/Mon Sep 14 00:40:25 2020//
+/decimal64.h/1.5/Thu Oct 13 01:10:18 2016//
+/decimal64Symbols.h/1.5/Thu Oct 13 01:10:18 2016//
+/host-ieee128.c/1.6/Mon Sep 14 00:40:25 2020//
+/host-ieee32.c/1.6/Mon Sep 14 00:40:25 2020//
+/host-ieee64.c/1.6/Mon Sep 14 00:40:25 2020//
+D

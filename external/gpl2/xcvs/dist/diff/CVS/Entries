@@ -1,0 +1,27 @@
+/ChangeLog/1.1.1.1/Tue Apr  7 22:10:10 2009//
+/Makefile.am/1.1.1.1/Tue Apr  7 22:10:10 2009//
+/Makefile.in/1.3/Thu Mar  8 20:54:20 2012//
+/README/1.1.1.1/Tue Apr  7 22:10:10 2009//
+/analyze.c/1.1.1.1/Tue Apr  7 22:10:11 2009//
+/build_diff.com/1.1.1.1/Tue Apr  7 22:10:10 2009//
+/cmpbuf.c/1.1.1.1/Tue Apr  7 22:10:11 2009//
+/cmpbuf.h/1.1.1.1/Tue Apr  7 22:10:11 2009//
+/context.c/1.1.1.1/Tue Apr  7 22:10:11 2009//
+/diagmeet.note/1.1.1.1/Tue Apr  7 22:10:11 2009//
+/diff.c/1.1.1.1/Tue Apr  7 22:10:10 2009//
+/diff.h/1.1.1.1/Tue Apr  7 22:10:11 2009//
+/diff3.c/1.3/Thu Mar  8 20:50:46 2012//
+/diffrun.h/1.1.1.1/Tue Apr  7 22:10:11 2009//
+/dir.c/1.1.1.1/Tue Apr  7 22:10:11 2009//
+/ed.c/1.1.1.1/Tue Apr  7 22:10:11 2009//
+/ifdef.c/1.1.1.1/Tue Apr  7 22:10:11 2009//
+/io.c/1.1.1.1/Tue Apr  7 22:10:11 2009//
+/libdiff.dep/1.1.1.1/Tue Apr  7 22:10:11 2009//
+/libdiff.dsp/1.1.1.1/Tue Apr  7 22:10:11 2009//
+/libdiff.mak/1.1.1.1/Tue Apr  7 22:10:11 2009//
+/normal.c/1.1.1.1/Tue Apr  7 22:10:11 2009//
+/side.c/1.2/Fri Jan  6 15:16:02 2012//
+/system.h/1.1.1.1/Tue Apr  7 22:10:11 2009//
+/util.c/1.2/Thu Mar  8 20:50:55 2012//
+/version.c/1.1.1.1/Tue Apr  7 22:10:11 2009//
+D

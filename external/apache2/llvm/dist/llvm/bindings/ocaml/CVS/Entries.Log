@@ -1,0 +1,12 @@
+A D/all_backends////
+A D/analysis////
+A D/backends////
+A D/bitreader////
+A D/bitwriter////
+A D/debuginfo////
+A D/executionengine////
+A D/irreader////
+A D/linker////
+A D/llvm////
+A D/target////
+A D/transforms////

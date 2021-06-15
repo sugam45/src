@@ -1,0 +1,7 @@
+A D/bootsect////
+A D/dos////
+A D/pxe////
+A D/rom////
+R D/rom////
+R D/pxe////
+R D/bootsect////

@@ -1,0 +1,189 @@
+$NetBSD: TODO.usbmp,v 1.19 2020/05/16 13:46:12 maya Exp $
+
+
+the majority of the USB MP device interface is documented in usbdivar.h.
+
+
+flesh out most of usbdi(9).
+
+usb_event_thread() startup should use something to sync companions
+
+
+KERNEL_LOCK
+  - auvitek.c
+  - auvitek_dtv.c
+  - emdtv.c
+  - emdtv_dtv.c
+  - ubt.c
+  - uhub.c
+  - usscanner.c
+
+usb_detach_{waitold,wakeup} to usb_detach_{wait,broadcast} conversion:
+  - drivers:
+      if_aue.c
+      stuirda.c
+      ubt.c
+      ucom.c
+      ucycom.c
+      udsir.c
+      uhso.c
+      uirda.c
+      ulpt.c
+      umass.c		- done, partially done -- need to check umass_scsipi.c change
+      uscanner.c
+      usscanner.c
+      ustir.c
+      utoppy.c
+
+
+use usb_delay_ms_locked() in places
+
+
+convert uhidev users to MPSAFE:
+  ucycom(4)
+  - own cdevsw that isn't D_MPSAFE; need to check intr handlers
+
+  uhid(4)
+  - D_MPSAFE not set as all users need it first.
+  - mostly done
+
+  ukbd(4)
+  ums(4)
+  uts(4)
+  pbms(4)
+  - depends upon wscons? check intr
+
+splusb drivers to convert:
+  - auvitek_dtv.c
+  - auvitek_video.c
+  - emdtv_dtv.c
+  - if_athn_usb.c
+  - if_otus.c
+  - if_rum.c
+  - if_run.c
+  - if_umb.c
+  - if_ural.c
+  - if_urtw.c
+  - if_urtwn.c
+  - if_zyd.c
+  - ubt.c
+  - ucycom.c
+  - udsir.c
+  - uhso.c
+  - uirda.c
+  - ukbd.c
+  - ulpt.c
+  - usbdi.h
+  - uscanner.c
+  - usscanner.c
+  - ustir.c
+  - utoppy.c
+  - uvideo.c
+
+wakeup/tsleep drivers:
+  - if_otus.c
+  - if_run.c
+  - if_upgt.c
+  - if_urtwn.c
+  - if_zyd.c
+  - ucom.c
+  - ucycom.c
+  - udsir.c
+  - uirda.c
+  - ulpt.c
+  - umass_isdata.c
+  - ustir.c
+  - uthum.c
+  - uvscom.c
+
+missing D_MPSAFE drivers:
+  - ucom
+  - ucycom
+  - ugen		- partially ready
+  - uhso
+  - ulpt
+  - usb
+  - uscanner
+  - utoppy
+
+missing CALLOUT_MPSAFE drivers:
+  - if_otus.c
+  - if_rum.c
+  - if_run.c
+  - if_upgt.c
+  - if_ural.c
+  - if_urtw.c
+  - if_urtwn.c
+  - if_zyd.c
+  - ukbd.c
+  - ulpt.c
+
+driver testing:		STATUS
+  - uhub		working
+  - uhid		working
+  - uhidev		working
+  - ums			working
+  - uts
+  - ukbd		working
+  - ucycom
+  - uep
+  - udl
+  - ulpt		attaches ok
+  - uhso		working (must take kernel lock for scsipi)
+  - umass		working
+  - uaudio		working
+  - umidi		working
+  - uirda
+  - stuirda
+  - ustir
+  - irmce
+  - aue
+  - axe			working
+  - axen		working
+  - cdce		working
+  - cue			working
+  - kue			working
+  - udav
+  - url			working
+  - urndis		working
+  - atu
+  - otus
+  - ral
+  - rum
+  - run
+  - ure			working
+  - urtw		working
+  - urtwn		working
+  - upgt
+  - zyd
+  - upl			working
+  - uberry
+  - uipad
+  - uscanner		? (must take kernel lock for scsipi)
+  - usscanner
+  - utoppy
+  - udsbr
+  - ugen		mostly done
+  - pseye		working
+  - uvideo
+  - auvitek		? (must take kernel lock for scsipi)
+  - emdtv		? (must take kernel lock for scsipi)
+  - ubt			working (must take kernel lock for scsipi)
+  - aubtfwl
+  - u3ginit
+ucom attachments:
+  - umodem		working
+  - uark
+  - ubsa
+  - uchcom		working
+  - uftdi		working
+  - uipaq
+  - umct
+  - uplcom		attaches ok
+  - uslsa		working
+  - uvscom		working
+  - umcs		working
+  - uvisor
+  - ukyopon
+  - u3g
+  - ugensa

@@ -1,0 +1,18 @@
+/Makefile/1.14/Mon Jun  1 01:03:21 2020//
+/Makefile.inc/1.1/Sat Jun 11 18:03:18 2011//
+/gen_ether_subr/1.1/Tue Nov  1 22:36:53 2011//
+/h_dns_server.c/1.4/Sat Mar 29 16:10:54 2014//
+/h_hostent.c/1.2/Thu Jan  9 02:18:10 2014//
+/h_nsd_recurse.c/1.3/Mon Jun  1 01:03:21 2020//
+/h_protoent.c/1.2/Thu Apr  7 18:14:09 2011//
+/h_servent.c/1.2/Thu Apr  7 18:14:09 2011//
+/hosts/1.1/Fri Aug 16 15:29:45 2013//
+/resolv.conf/1.1/Thu Jan  9 02:18:10 2014//
+/t_ether_aton.c/1.1/Tue Nov  1 22:36:53 2011//
+/t_getprotoent.c/1.2/Wed Apr  4 10:03:53 2012//
+/t_hostent.sh/1.10/Mon Jan 13 11:08:14 2014//
+/t_if_nametoindex.c/1.1/Mon Aug  6 04:50:11 2018//
+/t_nsdispatch.sh/1.1/Thu Jan 13 01:56:44 2011//
+/t_protoent.sh/1.2/Mon Sep  3 15:32:18 2012//
+/t_servent.sh/1.2/Tue Mar  8 08:34:17 2016//
+D

@@ -1,0 +1,14 @@
+A D/bootfs////
+A D/bootfs.sysinst////
+A D/cdroms////
+A D/floppies////
+A D/instfs////
+A D/liveimage////
+A D/miniroot////
+A D/ramdisk////
+A D/ramdisk.sysinst////
+A D/xsets////
+R D/xsets////
+R D/ramdisk.sysinst////
+R D/floppies////
+R D/bootfs.sysinst////

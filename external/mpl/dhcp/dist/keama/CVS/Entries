@@ -1,0 +1,20 @@
+/ChangeLog.md/1.1.1.1/Mon Aug  3 21:09:08 2020//
+/Makefile.am/1.1.1.1/Mon Aug  3 21:09:08 2020//
+/Makefile.in/1.1.1.2/Wed May 26 22:48:51 2021//
+/README.md/1.1.1.1/Mon Aug  3 21:09:08 2020//
+/conflex.c/1.2/Mon Aug  3 21:10:57 2020//
+/confparse.c/1.2/Mon Aug  3 21:10:57 2020//
+/data.c/1.2/Mon Aug  3 21:10:57 2020//
+/data.h/1.2/Mon Aug  3 21:10:57 2020//
+/dhctoken.h/1.2/Mon Aug  3 21:10:57 2020//
+/doc.txt/1.1.1.1/Mon Aug  3 21:09:08 2020//
+/eval.c/1.2/Mon Aug  3 21:10:57 2020//
+/json.c/1.2/Mon Aug  3 21:10:57 2020//
+/keama.8/1.2/Mon Aug  3 21:10:57 2020//
+/keama.c/1.2/Mon Aug  3 21:10:57 2020//
+/keama.h/1.2/Mon Aug  3 21:10:57 2020//
+/options.c/1.2/Mon Aug  3 21:10:57 2020//
+/parse.c/1.2/Mon Aug  3 21:10:57 2020//
+/print.c/1.2/Mon Aug  3 21:10:57 2020//
+/reduce.c/1.2/Mon Aug  3 21:10:57 2020//
+D

@@ -1,0 +1,19 @@
+/Makefile.inc/1.2/Thu Jan 16 20:31:43 2014//
+/inet.3/1.5/Wed Jul 25 14:51:15 2012//
+/inet6_option_space.3/1.3/Mon Mar 22 19:30:54 2010//
+/inet6_rthdr_space.3/1.3/Mon Jul  3 21:32:49 2017//
+/inet_cidr_ntop.c/1.8/Tue Mar 13 21:13:38 2012//
+/inet_cidr_pton.c/1.9/Thu Dec 13 08:42:26 2018//
+/inet_lnaof.c/1.1/Thu May 20 23:13:02 2004//
+/inet_makeaddr.c/1.1/Thu May 20 23:13:02 2004//
+/inet_net.3/1.5/Fri Jul 20 20:48:59 2012//
+/inet_net_ntop.c/1.4/Tue May  9 02:56:44 2017//
+/inet_net_pton.c/1.5/Thu Dec 13 08:44:11 2018//
+/inet_neta.c/1.3/Mon Jun 25 22:32:44 2012//
+/inet_netof.c/1.1/Thu May 20 23:13:02 2004//
+/inet_network.c/1.4/Sun Jan 20 04:56:08 2008//
+/inet_ntoa.c/1.2/Tue Mar 13 21:13:38 2012//
+/inet_ntop.c/1.12/Fri Mar  2 06:31:53 2018//
+/inet_pton.c/1.8/Tue Mar 13 21:13:38 2012//
+/nsap_addr.c/1.6/Sun Apr 12 17:07:17 2009//
+D

@@ -1,0 +1,19 @@
+/CHANGES/1.4/Tue Sep 29 02:49:56 2020//
+/Makefile/1.14/Sun Feb  9 15:13:28 2020//
+/acksend.c/1.11/Fri Jan 26 16:12:41 2007//
+/byteorder.c/1.9/Thu Jan 25 23:25:20 2007//
+/candidate.c/1.12/Fri Jan 26 16:12:41 2007//
+/cksum.c/1.7/Thu May 17 00:36:31 2007//
+/correct.c/1.14/Thu May 17 00:36:12 2007//
+/globals.h/1.11/Thu Jan 25 23:25:20 2007//
+/master.c/1.18/Fri Jan 26 16:12:41 2007//
+/measure.c/1.17/Sun Nov  4 22:36:58 2012//
+/networkdelta.c/1.12/Thu Aug  7 11:25:46 2003//
+/pathnames.h/1.7/Thu Aug  7 11:25:46 2003//
+/readmsg.c/1.23/Fri Aug 11 16:47:42 2017//
+/slave.c/1.19/Tue Jan 16 07:57:58 2018//
+/timed-extern.h/1.11/Tue Jan 16 07:57:58 2018//
+/timed.8/1.12/Tue Sep 28 16:37:08 2004//
+/timed.c/1.26/Sun Feb  4 09:01:13 2018//
+/tspname.c/1.1/Thu Jan 25 23:25:20 2007//
+D

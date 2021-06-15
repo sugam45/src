@@ -1,0 +1,11 @@
+A D/audit-packages////
+A D/bpm////
+A D/pkg_add////
+A D/pkg_admin////
+A D/pkg_create////
+A D/pkg_delete////
+A D/pkg_info////
+A D/pkg_view////
+R D/pkg_view////
+R D/bpm////
+R D/audit-packages////

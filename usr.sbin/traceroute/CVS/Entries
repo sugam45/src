@@ -1,0 +1,17 @@
+/CHANGES/1.2/Sun Sep 11 01:06:26 2011//
+/Makefile/1.22/Wed Feb  3 06:49:18 2021//
+/as.c/1.4/Tue May 10 01:52:49 2011//
+/as.h/1.4/Tue May 10 01:52:49 2011//
+/gnuc.h/1.2/Sat Jul  6 21:51:49 2002//
+/ifaddrlist.c/1.11/Sun Aug 18 04:12:07 2019//
+/ifaddrlist.h/1.3/Wed May 11 00:38:28 2011//
+/mean.awk/1.5/Sat Oct  4 16:31:29 1997//
+/median.awk/1.5/Sat Oct  4 16:31:32 1997//
+/prog_ops.h/1.2/Sun Aug 18 04:12:07 2019//
+/traceroute.8/1.30/Mon Jul  3 21:35:32 2017//
+/traceroute.c/1.84/Fri Jan 19 14:30:09 2018//
+/traceroute_hostops.c/1.2/Sun Aug 18 04:12:07 2019//
+/traceroute_rumpops.c/1.2/Sun Aug 18 04:12:07 2019//
+/trrt2netbsd/1.4/Wed Jun 16 20:47:57 1999//
+/version.c/1.3/Sun Sep 11 01:06:26 2011//
+D

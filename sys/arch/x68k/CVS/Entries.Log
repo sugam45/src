@@ -1,0 +1,13 @@
+A D/compile////
+A D/conf////
+A D/dev////
+A D/fdboot////
+A D/include////
+A D/sdboot////
+A D/stand////
+A D/usr.bin////
+A D/usr.sbin////
+A D/x68k////
+R D/usr.sbin////
+R D/sdboot////
+R D/fdboot////

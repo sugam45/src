@@ -1,0 +1,23 @@
+/Makefile/1.1.1.2/Thu Aug 16 18:17:47 2018//
+/boxdraw.c/1.1.1.2/Thu Aug 16 18:17:47 2018//
+/cmdline.c/1.1.1.1/Thu Aug 16 18:17:47 2018//
+/console.c/1.1.1.1/Tue Apr  1 16:16:06 2014//
+/crc.c/1.1.1.1/Tue Apr  1 16:16:06 2014//
+/data.c/1.1.1.2/Thu Aug 16 18:17:47 2018//
+/debug.c/1.1.1.2/Thu Aug 16 18:17:47 2018//
+/dpath.c/1.3/Thu Aug 16 18:22:05 2018//
+/error.c/1.1.1.2/Thu Aug 16 18:17:47 2018//
+/event.c/1.3/Thu Aug 16 18:22:05 2018//
+/exit.c/1.1.1.1/Thu Aug 16 18:17:47 2018//
+/guid.c/1.1.1.2/Thu Aug 16 18:17:47 2018//
+/hand.c/1.4/Thu Aug 16 18:22:05 2018//
+/hw.c/1.3/Thu Aug 16 18:22:05 2018//
+/init.c/1.2/Thu Aug 16 18:25:45 2018//
+/lib.h/1.1.1.2/Thu Aug 16 18:17:47 2018//
+/lock.c/1.1.1.1/Tue Apr  1 16:16:06 2014//
+/misc.c/1.2/Mon Apr 12 09:24:24 2021//
+/print.c/1.4/Sun Jan 27 04:17:39 2019//
+/smbios.c/1.1.1.2/Thu Aug 16 18:17:47 2018//
+/sread.c/1.1.1.1/Tue Apr  1 16:16:07 2014//
+/str.c/1.1.1.2/Thu Aug 16 18:17:47 2018//
+D

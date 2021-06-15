@@ -1,0 +1,19 @@
+/Makefile/1.9/Mon Jun 29 06:39:38 2020//
+/aic79xx.reg/1.14/Tue May 28 08:59:34 2019//
+/aic79xx.seq/1.12/Tue Jun  4 10:15:22 2019//
+/aic79xx_reg.h/1.12/Sat Jun 27 16:29:11 2020//
+/aic79xx_seq.h/1.12/Sat Jun 27 17:07:49 2020//
+/aic7xxx.reg/1.4/Sun Dec 11 12:22:18 2005//
+/aic7xxx.seq/1.20/Tue Jun  4 10:15:22 2019//
+/aic7xxx_reg.h/1.5/Sat Jun 27 16:48:01 2020//
+/aic7xxx_seq.h/1.14/Sat Jun 27 17:07:49 2020//
+/aicasm.c/1.10/Sat Jun 27 17:07:49 2020//
+/aicasm.h/1.4/Sun Dec 11 12:22:18 2005//
+/aicasm_gram.y/1.7/Sat Jun 27 16:48:01 2020//
+/aicasm_insformat.h/1.1/Sat Apr 19 19:26:11 2003//
+/aicasm_macro_gram.y/1.3/Sat Jun 27 16:19:38 2020//
+/aicasm_macro_scan.l/1.3/Sun Dec 11 12:22:18 2005//
+/aicasm_scan.l/1.6/Sat Jun 27 16:19:38 2020//
+/aicasm_symbol.c/1.7/Sat Jun 27 16:19:38 2020//
+/aicasm_symbol.h/1.2/Sat Apr 19 19:26:11 2003//
+D

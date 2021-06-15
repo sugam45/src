@@ -1,0 +1,24 @@
+/base64.c/1.1.1.1/Sun Apr 23 00:21:38 2017//
+/cfmakeraw.c/1.1.1.5/Sun Apr 23 00:21:38 2017//
+/clock_gettime.c/1.1.1.1/Sat Apr 17 19:42:03 2021//
+/daemon-darwin.c/1.1.1.1/Thu Oct 12 21:59:49 2017//
+/err.c/1.1.1.1/Sun Apr 23 00:21:38 2017//
+/explicit_bzero.c/1.1.1.1/Sun Apr 23 00:21:38 2017//
+/fdforkpty.c/1.1.1.1/Thu Oct 12 21:59:49 2017//
+/forkpty-haiku.c/1.1.1.1/Sat Apr 17 19:42:03 2021//
+/freezero.c/1.1.1.1/Sun Apr 23 00:21:38 2017//
+/getdtablecount.c/1.1.1.2/Sat Jan  5 21:32:49 2019//
+/getdtablesize.c/1.1.1.1/Sat Apr 17 19:42:03 2021//
+/getline.c/1.1.1.1/Sat Apr 17 19:42:03 2021//
+/getprogname.c/1.1.1.1/Sun Apr 23 00:21:38 2017//
+/imsg-buffer.c/1.10/Sat Apr 17 20:42:10 2021//
+/imsg.c/1.9/Sat Jan  5 21:44:40 2019//
+/imsg.h/1.1.1.7/Sat Apr 17 19:42:03 2021//
+/memmem.c/1.1.1.1/Thu Oct 12 21:59:49 2017//
+/reallocarray.c/1.1.1.2/Sun Apr 23 00:21:38 2017//
+/recallocarray.c/1.1.1.1/Sun Apr 23 00:21:38 2017//
+/setproctitle.c/1.1.1.1/Sun Apr 23 00:21:38 2017//
+/strndup.c/1.1.1.1/Sun Apr 23 00:21:38 2017//
+/strnlen.c/1.1.1.1/Sun Apr 23 00:21:38 2017//
+/utf8proc.c/1.1.1.1/Sun Apr 23 00:21:39 2017//
+D

@@ -1,0 +1,17 @@
+A D/authpf////
+A D/etc////
+A D/examples////
+A D/ftp-proxy////
+A D/man////
+A D/pfctl////
+A D/pflogd////
+A D/pfs////
+A D/spamd////
+A D/spamd-setup////
+A D/spamdb////
+A D/spamlogd////
+A D/tftp-proxy////
+R D/spamlogd////
+R D/spamdb////
+R D/spamd-setup////
+R D/spamd////

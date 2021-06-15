@@ -1,0 +1,27 @@
+#	$NetBSD: std.macppc,v 1.25 2020/08/29 23:00:10 macallan Exp $
+#
+# Standard/required options for NetBSD/macppc.
+
+machine	macppc powerpc
+include		"conf/std"	# MI standard options
+
+# standard ("mandatory") kernel options.
+options 	PPC_OEA		# OEA class PowerPC chips
+makeoptions	PPCDIR="oea"	# Tell Makefile.powerpc what dir to use
+makeoptions     PPC_ARCH_MODE="ppc32"
+
+# Executable support:
+options 	EXEC_ELF32	# (native) ELF32 binary support
+options 	EXEC_AOUT	# (native) a.out binary support (deprecated)
+options 	EXEC_SCRIPT	# shell script support
+
+options 	INTSTK=0x2000
+
+# some *Books have both ADB keyboards and Bluetooth modules which pose as USB
+# HID devices - for them to coexist on the same mux we tell the adbkbd driver
+# pose as a USB keyboard
+options 	ADBKBD_EMUL_USB
+options 	UKBD_LAYOUT="(KB_US | KB_APPLE)"  # for ukbd driver
+
+# Atheros HAL options
+include "external/isc/atheros_hal/conf/std.ath_hal"

@@ -1,0 +1,14 @@
+/asc_vsbus.c/1.45/Mon Sep  3 16:29:28 2018//
+/dz_vsbus.c/1.45/Sat Apr 24 23:36:51 2021//
+/hdc9224.c/1.61/Sat Apr 24 23:36:51 2021//
+/hdc9224.h/1.7/Mon May 22 17:17:25 2017//
+/lcg.c/1.6/Sat Apr 24 23:36:51 2021//
+/leds.c/1.10/Mon Sep  3 16:29:28 2018//
+/ncr.c/1.50/Sun Mar 22 20:27:47 2020//
+/smg.c/1.60/Sat Apr 24 23:36:51 2021//
+/spx.c/1.11/Sat Apr 24 23:36:51 2021//
+/tc_vsbus.c/1.10/Sat May  8 09:03:30 2021//
+/vsaudio.c/1.7/Sat Sep 12 05:19:16 2020//
+/vsbus.c/1.66/Sat Apr 24 23:36:51 2021//
+/vsbus_dma.c/1.16/Tue Dec 14 23:31:17 2010//
+D

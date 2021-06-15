@@ -1,0 +1,11 @@
+/bad-cookie-badaes.conf/1.1.1.1/Thu Sep  5 19:27:35 2019//
+/bad-cookie-badhex.conf/1.1.1.1/Sun Aug 12 12:07:32 2018//
+/bad-cookie-badsiphash24.conf/1.1.1.1/Thu Sep  5 19:27:35 2019//
+/bad-cookie-toolong.conf/1.1.1.1/Sun Aug 12 12:07:32 2018//
+/clean.sh/1.1.1.4/Fri Feb 19 16:37:05 2021//
+/good-cookie-aes.conf/1.1.1.1/Thu Sep  5 19:27:35 2019//
+/good-cookie-siphash24.conf/1.1.1.1/Thu Sep  5 19:27:35 2019//
+/prereq.sh/1.1.1.1/Fri Feb 19 16:37:05 2021//
+/setup.sh/1.1.1.4/Fri Feb 19 16:37:05 2021//
+/tests.sh/1.1.1.5/Fri Feb 19 16:37:05 2021//
+D

@@ -1,0 +1,11 @@
+/Makefile.inc/1.4/Sat Dec  7 15:13:59 2019//
+/atomic_add.3/1.1/Mon Jun 23 10:22:40 2008//
+/atomic_and.3/1.2/Sat Jun 16 08:11:32 2018//
+/atomic_cas.3/1.5/Sun Feb  2 18:06:33 2014//
+/atomic_dec.3/1.1/Mon Jun 23 10:22:40 2008//
+/atomic_inc.3/1.1/Mon Jun 23 10:22:40 2008//
+/atomic_ops.3/1.8/Sat Jun 16 08:11:32 2018//
+/atomic_or.3/1.2/Sat Jun 16 08:11:32 2018//
+/atomic_swap.3/1.1/Mon Jun 23 10:22:40 2008//
+/membar_ops.3/1.8/Fri Oct  9 19:41:02 2020//
+D

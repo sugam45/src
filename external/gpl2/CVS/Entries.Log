@@ -1,0 +1,17 @@
+A D/diffutils////
+A D/dtc////
+A D/gawk////
+A D/gettext////
+A D/gmake////
+A D/grep////
+A D/groff////
+A D/libdevmapper////
+A D/libmalloc////
+A D/lvm2////
+A D/lvm2tools////
+A D/rcs////
+A D/send-pr////
+A D/texinfo////
+A D/xcvs////
+R D/lvm2tools////
+R D/libdevmapper////

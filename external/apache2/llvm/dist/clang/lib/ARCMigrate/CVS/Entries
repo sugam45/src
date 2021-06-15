@@ -1,0 +1,24 @@
+/ARCMT.cpp/1.1.1.2/Sun May 30 01:25:36 2021//
+/ARCMTActions.cpp/1.1.1.1/Fri Nov  8 14:30:00 2019//
+/CMakeLists.txt/1.1.1.2/Sun May 30 01:25:36 2021//
+/FileRemapper.cpp/1.1.1.2/Sun May 30 01:25:36 2021//
+/Internals.h/1.1.1.2/Sun May 30 01:25:36 2021//
+/ObjCMT.cpp/1.1.1.2/Sun May 30 01:25:36 2021//
+/PlistReporter.cpp/1.1.1.2/Sun May 30 01:25:36 2021//
+/TransAPIUses.cpp/1.1.1.1/Fri Nov  8 14:30:00 2019//
+/TransARCAssign.cpp/1.1.1.1/Fri Nov  8 14:30:00 2019//
+/TransAutoreleasePool.cpp/1.1.1.1/Fri Nov  8 14:30:00 2019//
+/TransBlockObjCVariable.cpp/1.1.1.1/Fri Nov  8 14:30:01 2019//
+/TransEmptyStatementsAndDealloc.cpp/1.1.1.1/Fri Nov  8 14:30:01 2019//
+/TransGCAttrs.cpp/1.1.1.2/Sun May 30 01:25:36 2021//
+/TransGCCalls.cpp/1.1.1.1/Fri Nov  8 14:30:00 2019//
+/TransProperties.cpp/1.1.1.2/Sun May 30 01:25:36 2021//
+/TransProtectedScope.cpp/1.1.1.2/Sun May 30 01:25:36 2021//
+/TransRetainReleaseDealloc.cpp/1.1.1.1/Fri Nov  8 14:30:00 2019//
+/TransUnbridgedCasts.cpp/1.1.1.1/Fri Nov  8 14:30:00 2019//
+/TransUnusedInitDelegate.cpp/1.1.1.1/Fri Nov  8 14:30:00 2019//
+/TransZeroOutPropsInDealloc.cpp/1.1.1.2/Sun May 30 01:25:36 2021//
+/TransformActions.cpp/1.1.1.1/Fri Nov  8 14:30:00 2019//
+/Transforms.cpp/1.1.1.2/Sun May 30 01:25:36 2021//
+/Transforms.h/1.1.1.2/Sun May 30 01:25:36 2021//
+D

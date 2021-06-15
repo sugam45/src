@@ -1,0 +1,10 @@
+A D/bootfloppy-common////
+A D/bootfloppy.generic////
+A D/bootfloppy.sysinst////
+A D/bootfloppy_com0.generic////
+A D/bootfloppy_com0.sysinst////
+A D/bootfloppy_small.sysinst////
+A D/bootfloppy_small_com0.sysinst////
+A D/kernel-generic////
+A D/kernel-ramdisk////
+A D/ramdisk////

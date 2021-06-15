@@ -1,0 +1,19 @@
+/env-args-last-is-assign.txt/1.1.1.1/Fri Nov  8 14:28:09 2019//
+/env-args-last-is-u-arg.txt/1.1.1.1/Fri Nov  8 14:28:09 2019//
+/env-args-last-is-u.txt/1.1.1.1/Fri Nov  8 14:28:09 2019//
+/env-args-nested-none.txt/1.1.1.1/Sun May 30 01:28:23 2021//
+/env-args-none.txt/1.1.1.1/Fri Nov  8 14:28:09 2019//
+/env-calls-cd.txt/1.1.1.1/Sun May 30 01:28:23 2021//
+/env-calls-colon.txt/1.1.1.1/Sun May 30 01:28:23 2021//
+/env-calls-echo.txt/1.1.1.1/Sun May 30 01:28:23 2021//
+/env-calls-env.txt/1.1.1.1/Sun May 30 01:28:23 2021//
+/env-calls-export.txt/1.1.1.1/Sun May 30 01:28:23 2021//
+/env-calls-mkdir.txt/1.1.1.1/Sun May 30 01:28:23 2021//
+/env-calls-not-builtin.txt/1.1.1.1/Sun May 30 01:28:23 2021//
+/env-calls-rm.txt/1.1.1.1/Sun May 30 01:28:23 2021//
+/env-u.txt/1.1.1.1/Fri Nov  8 14:28:09 2019//
+/env.txt/1.1.1.1/Fri Nov  8 14:28:09 2019//
+/lit.cfg/1.1.1.1/Fri Nov  8 14:28:09 2019//
+/mixed.txt/1.1.1.1/Fri Nov  8 14:28:09 2019//
+/print_environment.py/1.1.1.1/Fri Nov  8 14:28:09 2019//
+D

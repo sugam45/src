@@ -1,0 +1,19 @@
+/crtfastmath.c/1.8/Fri Apr  9 23:14:47 2021//
+/crti.S/1.8/Fri Apr  9 23:14:47 2021//
+/crtn.S/1.8/Fri Apr  9 23:14:47 2021//
+/gthr-mipssde.h/1.8/Fri Apr  9 23:14:47 2021//
+/lib2funcs.c/1.5/Fri Apr  9 23:14:47 2021//
+/libgcc-mips16.ver/1.8/Fri Apr  9 23:14:47 2021//
+/linux-unwind.h/1.8/Fri Apr  9 23:14:47 2021//
+/mips16.S/1.8/Fri Apr  9 23:14:47 2021//
+/sfp-machine.h/1.5/Fri Apr  9 23:14:47 2021//
+/t-crtstuff/1.5/Thu Sep 26 08:02:54 2019//
+/t-elf/1.5/Thu Sep 26 08:02:54 2019//
+/t-mips/1.5/Thu Sep 26 08:02:54 2019//
+/t-mips16/1.8/Fri Apr  9 23:14:47 2021//
+/t-mips64/1.3/Thu Sep 26 08:02:54 2019//
+/t-sdemtk/1.5/Thu Sep 26 08:02:54 2019//
+/t-softfp-tf/1.3/Thu Sep 26 08:02:54 2019//
+/t-vr/1.5/Thu Sep 26 08:02:54 2019//
+/vr4120-div.S/1.8/Fri Apr  9 23:14:47 2021//
+D

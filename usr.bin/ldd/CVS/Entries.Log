@@ -1,0 +1,10 @@
+A D/aout////
+A D/build////
+A D/elf32////
+A D/elf32_compat////
+A D/elf64////
+A D/ldd_aout////
+A D/ldd_elf////
+R D/ldd_elf////
+R D/ldd_aout////
+R D/aout////

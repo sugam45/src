@@ -1,0 +1,10 @@
+A D/kern////
+A D/machine////
+A D/rpc////
+A D/sharefs////
+A D/sys////
+A D/util////
+A D/vm////
+R D/vm////
+R D/sharefs////
+R D/rpc////

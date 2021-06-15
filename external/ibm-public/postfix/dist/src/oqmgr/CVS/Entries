@@ -1,0 +1,17 @@
+/Makefile.in/1.1.1.5/Wed Mar 18 18:59:35 2020//
+/qmgr.c/1.3/Wed Mar 18 19:05:17 2020//
+/qmgr.h/1.3/Wed Mar 18 19:05:17 2020//
+/qmgr_active.c/1.3/Wed Mar 18 19:05:17 2020//
+/qmgr_bounce.c/1.1.1.1/Tue Jun 23 10:08:50 2009//
+/qmgr_defer.c/1.1.1.1/Tue Jun 23 10:08:50 2009//
+/qmgr_deliver.c/1.2/Tue Feb 14 01:16:46 2017//
+/qmgr_enable.c/1.1.1.1/Tue Jun 23 10:08:50 2009//
+/qmgr_entry.c/1.2/Tue Feb 14 01:16:46 2017//
+/qmgr_error.c/1.2/Wed Mar 18 19:05:17 2020//
+/qmgr_feedback.c/1.1.1.1/Tue Jun 23 10:08:50 2009//
+/qmgr_message.c/1.3/Wed Mar 18 19:05:17 2020//
+/qmgr_move.c/1.1.1.1/Tue Jun 23 10:08:50 2009//
+/qmgr_queue.c/1.2/Tue Feb 14 01:16:46 2017//
+/qmgr_scan.c/1.1.1.1/Tue Jun 23 10:08:50 2009//
+/qmgr_transport.c/1.2/Tue Feb 14 01:16:46 2017//
+D

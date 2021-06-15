@@ -1,0 +1,9 @@
+A D/ftp-proxy////
+A D/spamd////
+A D/spamd-setup////
+A D/spamlogd////
+A D/tftp-proxy////
+R D/spamlogd////
+R D/spamd-setup////
+R D/spamd////
+R D/ftp-proxy////

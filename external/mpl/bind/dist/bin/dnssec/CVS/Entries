@@ -1,0 +1,22 @@
+/Makefile.in/1.1.1.5/Mon Aug  3 17:07:02 2020//
+/dnssec-cds.c/1.7/Fri Feb 19 16:42:10 2021//
+/dnssec-cds.rst/1.1.1.2/Fri Feb 19 16:37:03 2021//
+/dnssec-dsfromkey.c/1.9/Fri Feb 19 16:42:10 2021//
+/dnssec-dsfromkey.rst/1.1.1.2/Fri Feb 19 16:37:03 2021//
+/dnssec-importkey.c/1.6/Fri Feb 19 16:42:10 2021//
+/dnssec-importkey.rst/1.1.1.2/Fri Feb 19 16:37:03 2021//
+/dnssec-keyfromlabel.c/1.6/Fri Feb 19 16:42:10 2021//
+/dnssec-keyfromlabel.rst/1.1.1.2/Fri Feb 19 16:37:03 2021//
+/dnssec-keygen.c/1.8/Fri Feb 19 16:42:10 2021//
+/dnssec-keygen.rst/1.1.1.2/Fri Feb 19 16:37:03 2021//
+/dnssec-revoke.c/1.6/Fri Feb 19 16:42:10 2021//
+/dnssec-revoke.rst/1.1.1.2/Fri Feb 19 16:37:03 2021//
+/dnssec-settime.c/1.5/Fri Feb 19 16:42:10 2021//
+/dnssec-settime.rst/1.1.1.2/Fri Feb 19 16:37:03 2021//
+/dnssec-signzone.c/1.7/Thu Apr 29 17:26:09 2021//
+/dnssec-signzone.rst/1.1.1.2/Fri Feb 19 16:37:03 2021//
+/dnssec-verify.c/1.5/Fri Feb 19 16:42:10 2021//
+/dnssec-verify.rst/1.1.1.2/Fri Feb 19 16:37:03 2021//
+/dnssectool.c/1.5/Fri Feb 19 16:42:10 2021//
+/dnssectool.h/1.5/Fri Feb 19 16:42:10 2021//
+D

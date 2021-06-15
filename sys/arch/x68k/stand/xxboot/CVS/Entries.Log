@@ -1,0 +1,10 @@
+A D/cdboot_cd9660////
+A D/fdboot_ustarfs////
+A D/gunzip////
+A D/img////
+A D/xxboot_ffsv1////
+A D/xxboot_ffsv2////
+A D/xxboot_lfsv1////
+A D/xxboot_lfsv2////
+R D/img////
+R D/gunzip////

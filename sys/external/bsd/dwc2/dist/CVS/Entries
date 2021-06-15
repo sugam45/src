@@ -1,0 +1,10 @@
+/dwc2_core.c/1.13/Wed Feb 24 22:17:54 2016//
+/dwc2_core.h/1.9/Wed Aug  8 07:20:44 2018//
+/dwc2_coreintr.c/1.11/Wed Feb 24 22:17:54 2016//
+/dwc2_hcd.c/1.25/Mon Jan 11 17:00:18 2021//
+/dwc2_hcd.h/1.15/Wed Aug  8 07:20:44 2018//
+/dwc2_hcdddma.c/1.9/Sun Apr  5 20:59:38 2020//
+/dwc2_hcdintr.c/1.15/Sun Aug 12 09:59:30 2018//
+/dwc2_hcdqueue.c/1.15/Wed Aug  8 07:20:44 2018//
+/dwc2_hw.h/1.4/Sun Feb 14 10:53:30 2016//
+D

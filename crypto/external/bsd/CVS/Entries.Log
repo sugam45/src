@@ -1,0 +1,10 @@
+A D/heimdal////
+A D/libsaslc////
+A D/netpgp////
+A D/openpgpsdk////
+A D/openssh////
+A D/openssl////
+A D/openssl.old////
+A D/sasl_client_lib////
+R D/sasl_client_lib////
+R D/openpgpsdk////

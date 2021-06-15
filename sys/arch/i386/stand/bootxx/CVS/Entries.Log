@@ -1,0 +1,13 @@
+A D/bootxx_cd9660////
+A D/bootxx_dosfs////
+A D/bootxx_ext2fs////
+A D/bootxx_ffsv1////
+A D/bootxx_ffsv2////
+A D/bootxx_lfsv1////
+A D/bootxx_lfsv2////
+A D/bootxx_msdos////
+A D/bootxx_ufs////
+A D/bootxx_ustarfs////
+R D/bootxx_ufs////
+R D/bootxx_dosfs////
+R D/bootxx_cd9660////

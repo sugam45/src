@@ -1,0 +1,13 @@
+/admgpio.c/1.5/Sat Apr 24 23:36:41 2021//
+/admpci.c/1.15/Sat Apr 24 23:36:41 2021//
+/admwdog.c/1.4/Sat Oct 27 17:18:01 2012//
+/ahci.c/1.24/Sat Apr 24 23:36:41 2021//
+/ahcireg.h/1.2/Sat Apr 23 10:15:29 2016//
+/ahcivar.h/1.6/Sat Apr 23 10:15:29 2016//
+/if_admsw.c/1.28/Wed Jan 29 05:30:14 2020//
+/if_admswreg.h/1.1/Tue Mar 20 08:52:02 2007//
+/if_admswvar.h/1.8/Thu Apr 16 23:29:52 2020//
+/uart.c/1.12/Fri Jul 25 08:10:34 2014//
+/uart.h/1.1/Tue Mar 20 08:52:02 2007//
+/wdc_extio.c/1.12/Thu Dec  3 08:48:06 2020//
+D

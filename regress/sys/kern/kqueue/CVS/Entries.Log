@@ -1,0 +1,11 @@
+A D/ioctl////
+A D/proc////
+A D/read////
+A D/sig////
+A D/vnode////
+A D/write////
+R D/write////
+R D/sig////
+R D/read////
+R D/proc////
+R D/ioctl////

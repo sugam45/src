@@ -1,0 +1,23 @@
+/nsaccess.c/1.21/Sun May 30 16:25:35 2021//
+/nsalloc.c/1.1.1.13/Sat Apr  3 17:43:36 2021//
+/nsarguments.c/1.1.1.11/Sat Apr  3 17:43:36 2021//
+/nsconvert.c/1.1.1.15/Sat Apr  3 17:43:36 2021//
+/nsdump.c/1.19/Sat Apr  3 17:45:03 2021//
+/nsdumpdv.c/1.1.1.11/Sat Apr  3 17:43:36 2021//
+/nseval.c/1.17/Sat Apr  3 17:45:03 2021//
+/nsinit.c/1.19/Sat Apr  3 17:45:03 2021//
+/nsload.c/1.1.1.15/Sat Apr  3 17:43:36 2021//
+/nsnames.c/1.1.1.14/Sat Apr  3 17:43:36 2021//
+/nsobject.c/1.1.1.11/Sat Apr  3 17:43:36 2021//
+/nsparse.c/1.1.1.14/Sat Apr  3 17:43:36 2021//
+/nspredef.c/1.1.1.13/Sat Apr  3 17:43:36 2021//
+/nsprepkg.c/1.1.1.13/Sat Apr  3 17:43:36 2021//
+/nsrepair.c/1.1.1.14/Sat Apr  3 17:43:36 2021//
+/nsrepair2.c/1.17/Sat Apr  3 17:45:03 2021//
+/nssearch.c/1.1.1.14/Sat Apr  3 17:43:36 2021//
+/nsutils.c/1.1.1.16/Sat Apr  3 17:43:36 2021//
+/nswalk.c/1.1.1.11/Sat Apr  3 17:43:36 2021//
+/nsxfeval.c/1.16/Sat Apr  3 17:45:03 2021//
+/nsxfname.c/1.14/Sat Apr  3 17:45:03 2021//
+/nsxfobj.c/1.1.1.12/Sat Apr  3 17:43:36 2021//
+D

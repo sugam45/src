@@ -1,0 +1,12 @@
+/Makefile/1.1/Sun Mar  4 04:00:45 2018//
+/alpha-mont.S/1.2/Sun Sep 23 13:33:04 2018//
+/alphacpuid.S/1.1/Sun Mar  4 04:00:45 2018//
+/asm.h/1.1/Sun Mar  4 04:00:45 2018//
+/crypto.inc/1.3/Sat May  9 13:16:42 2020//
+/des.inc/1.1/Sun Jul 19 23:30:45 2009//
+/ghash-alpha.S/1.1/Sun Mar  4 04:00:45 2018//
+/modes.inc/1.1/Sun Mar  4 04:00:45 2018//
+/regdef.h/1.1/Sun Mar  4 04:00:45 2018//
+/sha.inc/1.1/Sun Mar  4 04:00:45 2018//
+/sha1-alpha.S/1.1/Sun Mar  4 04:00:45 2018//
+D

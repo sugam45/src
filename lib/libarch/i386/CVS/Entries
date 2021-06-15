@@ -1,0 +1,12 @@
+/Makefile.inc/1.17/Sat Aug 12 08:21:30 2017//
+/i386_get_ioperm.c/1.7/Wed Mar 21 21:37:29 2012//
+/i386_get_ldt.2/1.14/Mon Jul  3 21:32:48 2017//
+/i386_get_ldt.c/1.7/Wed Mar 21 21:37:29 2012//
+/i386_get_mtrr.2/1.13/Wed Apr 30 13:10:50 2008//
+/i386_iopl.2/1.17/Wed Apr 30 13:10:50 2008//
+/i386_iopl.c/1.6/Wed Mar 21 21:37:29 2012//
+/i386_mtrr.c/1.1/Mon Sep 10 10:20:32 2001//
+/i386_set_ioperm.c/1.7/Wed Mar 21 21:37:29 2012//
+/i386_set_ldt.c/1.7/Wed Mar 21 21:37:29 2012//
+/shlib_version/1.7/Sat Aug 12 19:48:28 2017//
+D

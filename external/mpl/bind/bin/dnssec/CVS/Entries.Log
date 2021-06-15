@@ -1,0 +1,8 @@
+A D/dnssec-dsfromkey////
+A D/dnssec-importkey////
+A D/dnssec-keyfromlabel////
+A D/dnssec-keygen////
+A D/dnssec-revoke////
+A D/dnssec-settime////
+A D/dnssec-signzone////
+A D/dnssec-verify////

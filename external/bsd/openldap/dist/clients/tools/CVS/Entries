@@ -1,0 +1,13 @@
+/Makefile.in/1.1.1.8/Tue Aug 11 13:12:03 2020//
+/common.c/1.9/Tue Aug 11 13:15:34 2020//
+/common.h/1.2/Tue Aug 11 13:15:34 2020//
+/ldapcompare.c/1.2/Tue Aug 11 13:15:34 2020//
+/ldapdelete.c/1.2/Tue Aug 11 13:15:34 2020//
+/ldapexop.c/1.2/Tue Aug 11 13:15:34 2020//
+/ldapmodify.c/1.2/Tue Aug 11 13:15:34 2020//
+/ldapmodrdn.c/1.2/Tue Aug 11 13:15:34 2020//
+/ldappasswd.c/1.2/Tue Aug 11 13:15:34 2020//
+/ldapsearch.c/1.2/Tue Aug 11 13:15:34 2020//
+/ldapurl.c/1.2/Tue Aug 11 13:15:34 2020//
+/ldapwhoami.c/1.2/Tue Aug 11 13:15:34 2020//
+D

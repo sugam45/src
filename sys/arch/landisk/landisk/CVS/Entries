@@ -1,0 +1,12 @@
+/autoconf.c/1.8/Sat Apr  6 00:09:09 2019//
+/bus_dma.c/1.16/Sat Dec 19 21:27:52 2020//
+/clock_machdep.c/1.4/Sun May  4 19:43:06 2008//
+/consinit.c/1.1/Fri Sep  1 21:26:18 2006//
+/intr.c/1.9/Sat Dec 19 21:27:52 2020//
+/kloader_machdep.c/1.2/Mon Apr 28 20:23:26 2008//
+/landiskreg.h/1.2/Sat Jan 21 19:44:30 2012//
+/locore.S/1.4/Mon Apr 28 20:23:26 2008//
+/machdep.c/1.23/Mon Nov  6 03:47:47 2017//
+/mainbus.c/1.5/Sat Apr 24 23:36:40 2021//
+/shpcic_machdep.c/1.7/Sat Mar 29 19:28:29 2014//
+D

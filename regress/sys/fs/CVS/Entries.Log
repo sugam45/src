@@ -1,0 +1,12 @@
+A D/ffs////
+A D/getdents////
+A D/lfs////
+A D/lseek////
+A D/mkdir////
+A D/posix_fadvise////
+A D/tmpfs////
+R D/tmpfs////
+R D/posix_fadvise////
+R D/mkdir////
+R D/lseek////
+R D/getdents////

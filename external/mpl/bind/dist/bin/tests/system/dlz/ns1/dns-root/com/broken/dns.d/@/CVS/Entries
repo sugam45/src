@@ -1,0 +1,4 @@
+/DNAME=10=example.net.=/1.1.1.2/Fri Feb 19 16:37:05 2021//
+/NS=10=example.com.=/1.1.1.2/Fri Feb 19 16:37:05 2021//
+/SOA=10=ns.example.com.=root.example.com.=None=None=None=None=None=/1.1.1.2/Fri Feb 19 16:37:05 2021//
+D

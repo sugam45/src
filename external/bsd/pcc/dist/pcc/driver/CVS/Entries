@@ -1,0 +1,23 @@
+/Makefile.in/1.1.1.1/Tue Feb  9 20:29:11 2016//
+/cc.din/1.1.1.1/Tue Feb  9 20:29:11 2016//
+/config.h/1.1.1.1/Tue Feb  9 20:29:12 2016//
+/driver.c/1.1.1.1/Tue Feb  9 20:29:13 2016//
+/driver.h/1.1.1.1/Tue Feb  9 20:29:13 2016//
+/driver.man/1.1.1.1/Tue Feb  9 20:29:12 2016//
+/list.c/1.1.1.1/Tue Feb  9 20:29:12 2016//
+/mkopt.sh/1.1.1.1/Tue Feb  9 20:29:13 2016//
+/opt.c.in/1.1.1.1/Tue Feb  9 20:29:13 2016//
+/options.c/1.1.1.1/Tue Feb  9 20:29:13 2016//
+/osdefs.h/1.1.1.1/Tue Feb  9 20:29:11 2016//
+/path.c/1.1.1.1/Tue Feb  9 20:29:12 2016//
+/platform.c/1.1.1.1/Tue Feb  9 20:29:12 2016//
+/prog_asm.c/1.1.1.1/Tue Feb  9 20:29:12 2016//
+/prog_ccom.c/1.1.1.1/Tue Feb  9 20:29:12 2016//
+/prog_cpp.c/1.1.1.1/Tue Feb  9 20:29:13 2016//
+/prog_cxxcom.c/1.1.1.1/Tue Feb  9 20:29:13 2016//
+/prog_fcom.c/1.1.1.1/Tue Feb  9 20:29:13 2016//
+/prog_link.c/1.1.1.1/Tue Feb  9 20:29:13 2016//
+/target.c/1.1.1.1/Tue Feb  9 20:29:13 2016//
+/wflag.c/1.1.1.1/Tue Feb  9 20:29:13 2016//
+/xalloc.c/1.1.1.1/Tue Feb  9 20:29:13 2016//
+D

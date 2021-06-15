@@ -1,0 +1,17 @@
+A D/gzboot_ADI_BRH_flash_0x00140000////
+A D/gzboot_IQ80310_flash_0x00080000////
+A D/gzboot_IQ80321_flash_0xf0080000////
+A D/gzboot_TEAMASA_NPWR_flash_0x00080000////
+A D/gzimg////
+A D/gzimg_IQ80310_flash_0x00080000////
+A D/gzimg_IQ80321_flash_0xf0080000////
+A D/kern_IQ80310////
+A D/kern_IQ80321////
+R D/kern_IQ80321////
+R D/kern_IQ80310////
+R D/gzimg_IQ80321_flash_0xf0080000////
+R D/gzimg_IQ80310_flash_0x00080000////
+R D/gzboot_TEAMASA_NPWR_flash_0x00080000////
+R D/gzboot_IQ80321_flash_0xf0080000////
+R D/gzboot_IQ80310_flash_0x00080000////
+R D/gzboot_ADI_BRH_flash_0x00140000////

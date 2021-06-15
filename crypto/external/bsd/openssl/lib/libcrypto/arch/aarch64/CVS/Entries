@@ -1,0 +1,24 @@
+/Makefile/1.2/Wed Mar  7 16:05:44 2018//
+/aes.inc/1.3/Sun Dec  9 21:39:48 2018//
+/aesv8-armx.S/1.3/Thu Dec 10 00:33:10 2020//
+/arm64cpuid.S/1.2/Sun Sep 23 13:33:04 2018//
+/armv8-mont.S/1.2/Sun Mar 22 00:53:11 2020//
+/bf.inc/1.2/Wed Mar  7 16:05:44 2018//
+/bn.inc/1.2/Wed Mar  7 16:05:44 2018//
+/chacha-armv8.S/1.3/Thu Dec 10 00:33:10 2020//
+/chacha.inc/1.1/Wed Mar  7 16:05:44 2018//
+/crypto.inc/1.5/Sat May  9 13:16:42 2020//
+/des.inc/1.2/Wed Mar  7 16:05:44 2018//
+/ec.inc/1.1/Wed Mar  7 16:05:44 2018//
+/ecp_nistz256-armv8.S/1.3/Sun Mar 22 00:53:11 2020//
+/ghashv8-armx.S/1.3/Sun Sep 23 13:33:04 2018//
+/keccak1600-armv8.S/1.2/Sun Mar 22 00:53:11 2020//
+/modes.inc/1.2/Wed Mar  7 16:05:44 2018//
+/poly1305-armv8.S/1.3/Thu Dec 10 00:33:10 2020//
+/poly1305.inc/1.1/Wed Mar  7 16:05:44 2018//
+/rc4.inc/1.2/Wed Mar  7 16:05:44 2018//
+/sha.inc/1.3/Sun Sep 23 13:33:04 2018//
+/sha1-armv8.S/1.3/Thu Dec 10 00:33:10 2020//
+/sha512-armv8.S/1.4/Thu Dec 10 00:33:10 2020//
+/vpaes-armv8.S/1.3/Sun Mar 22 00:53:11 2020//
+D

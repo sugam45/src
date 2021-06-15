@@ -1,0 +1,26 @@
+/HDB.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb__del.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb__get.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb__put.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_auth_status.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_check_constrained_delegation.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_check_pkinit_ms_upn_match.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_check_s4u2self.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_close.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_destroy.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_entry_ex.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_fetch_kvno.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_firstkey.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_free.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_get_realms.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_lock.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_name.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_nextkey.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_open.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_password.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_remove.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_rename.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_set_sync.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_store.3/1.2/Sun Dec 15 22:50:44 2019//
+/hdb_unlock.3/1.2/Sun Dec 15 22:50:44 2019//
+D

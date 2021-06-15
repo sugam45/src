@@ -1,0 +1,23 @@
+# $NetBSD: std.amd64,v 1.12 2020/04/25 15:26:16 bouyer Exp $
+#
+# standard, required NetBSD/amd64 'options'
+
+machine amd64 x86 xen
+include 	"conf/std"	# MI standard options
+include 	"arch/xen/conf/std.xenversion"
+
+options 	CPU_IN_CKSUM
+options 	EXEC_ELF64	# exec ELF binaries
+options 	EXEC_SCRIPT	# exec #! scripts
+options 	MTRR
+options 	MULTIPROCESSOR
+
+options 	CHILD_MAX=1024	# 160 is too few
+options 	OPEN_MAX=1024	# 128 is too few
+
+mainbus0 at root
+cpu* at mainbus?
+ioapic* at mainbus? apid ?
+
+# Atheros HAL options
+include "external/isc/atheros_hal/conf/std.ath_hal"

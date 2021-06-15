@@ -1,0 +1,22 @@
+/bsd-getline.c/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/bsd-getpagesize.c/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/clock_gettime.c/1.1.1.1/Fri Dec  4 18:09:13 2020//
+/diff.sh/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/err.h/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/explicit_bzero.c/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/explicit_bzero_win32.c/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/getopt.h/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/getopt_long.c/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/openbsd-compat.h/1.1.1.2/Fri Dec  4 18:09:13 2020//
+/posix_win.c/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/posix_win.h/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/readpassphrase.c/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/readpassphrase.h/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/readpassphrase_win32.c/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/recallocarray.c/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/strlcat.c/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/strlcpy.c/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/time.h/1.1.1.1/Fri Dec  4 18:09:13 2020//
+/timingsafe_bcmp.c/1.1.1.1/Tue Mar  3 00:11:47 2020//
+/types.h/1.1.1.2/Fri Dec  4 18:09:13 2020//
+D

@@ -1,0 +1,27 @@
+/Makefile/1.1/Mon Jun 19 15:44:45 2006//
+/bluetooth.h/1.12/Sun May 18 14:46:16 2014//
+/bt_proto.c/1.16/Thu Jan 21 15:41:30 2016//
+/bt_sysctl.c/1.3/Tue Feb 25 18:30:12 2014//
+/files.netbt/1.5/Fri Mar 26 18:15:15 2010//
+/hci.h/1.46/Sat Sep 28 07:06:33 2019//
+/hci_event.c/1.26/Sat Sep 28 07:06:33 2019//
+/hci_ioctl.c/1.14/Sun Feb  3 03:19:28 2019//
+/hci_link.c/1.25/Fri Sep  7 14:47:15 2018//
+/hci_misc.c/1.3/Sun Sep 16 19:59:30 2007//
+/hci_socket.c/1.47/Sat Sep 28 07:10:55 2019//
+/hci_unit.c/1.15/Sat Apr 24 23:37:01 2021//
+/l2cap.h/1.19/Sat Nov 28 07:50:37 2015//
+/l2cap_lower.c/1.10/Tue Aug  5 07:55:31 2014//
+/l2cap_misc.c/1.7/Sun Sep 13 18:45:11 2009//
+/l2cap_signal.c/1.20/Sat Feb 29 11:40:06 2020//
+/l2cap_socket.c/1.36/Mon Jan 28 12:53:01 2019//
+/l2cap_upper.c/1.19/Mon Dec 12 15:58:45 2016//
+/rfcomm.h/1.18/Fri Aug  8 03:05:45 2014//
+/rfcomm_dlc.c/1.9/Mon Sep  3 16:29:36 2018//
+/rfcomm_session.c/1.27/Sat Feb 29 11:40:06 2020//
+/rfcomm_socket.c/1.38/Mon Jan 28 12:53:01 2019//
+/rfcomm_upper.c/1.23/Mon Sep  3 16:29:36 2018//
+/sco.h/1.11/Tue Aug  5 07:55:32 2014//
+/sco_socket.c/1.38/Mon Jan 28 12:53:01 2019//
+/sco_upper.c/1.16/Tue Aug  5 07:55:32 2014//
+D

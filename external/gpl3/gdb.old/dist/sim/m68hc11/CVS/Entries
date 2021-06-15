@@ -1,0 +1,20 @@
+/ChangeLog/1.8/Mon Sep 14 00:40:32 2020//
+/Makefile.in/1.8/Mon Sep 14 00:40:32 2020//
+/aclocal.m4/1.6/Mon Sep 14 00:40:32 2020//
+/config.in/1.7/Mon Sep 14 00:40:32 2020//
+/configure/1.7/Mon Sep 14 00:40:32 2020//
+/configure.ac/1.7/Mon Sep 14 00:40:32 2020//
+/dv-m68hc11.c/1.8/Mon Sep 14 00:40:32 2020//
+/dv-m68hc11eepr.c/1.8/Mon Sep 14 00:40:32 2020//
+/dv-m68hc11sio.c/1.8/Mon Sep 14 00:40:32 2020//
+/dv-m68hc11spi.c/1.8/Mon Sep 14 00:40:32 2020//
+/dv-m68hc11tim.c/1.8/Mon Sep 14 00:40:32 2020//
+/dv-nvram.c/1.8/Mon Sep 14 00:40:32 2020//
+/emulos.c/1.8/Mon Sep 14 00:40:32 2020//
+/gencode.c/1.8/Mon Sep 14 00:40:32 2020//
+/interp.c/1.8/Mon Sep 14 00:40:32 2020//
+/interrupts.c/1.8/Mon Sep 14 00:40:32 2020//
+/interrupts.h/1.8/Mon Sep 14 00:40:32 2020//
+/m68hc11_sim.c/1.8/Mon Sep 14 00:40:32 2020//
+/sim-main.h/1.8/Mon Sep 14 00:40:32 2020//
+D

@@ -1,0 +1,13 @@
+A D/binpatch////
+A D/boot////
+A D/bootblock////
+A D/dumpfont////
+A D/iteconfig////
+A D/loadbsd////
+A D/loadkmap////
+A D/misc////
+A D/videomode////
+R D/videomode////
+R D/misc////
+R D/iteconfig////
+R D/boot////

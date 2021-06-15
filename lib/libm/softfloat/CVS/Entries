@@ -1,0 +1,15 @@
+/feclearexcept.c/1.1/Wed Mar 22 23:11:09 2017//
+/fedisableexcept.c/1.1/Wed Mar 22 23:11:09 2017//
+/feenableexcept.c/1.1/Wed Mar 22 23:11:09 2017//
+/fegetenv.c/1.1/Wed Mar 22 23:11:09 2017//
+/fegetexcept.c/1.1/Wed Mar 22 23:11:09 2017//
+/fegetexceptflag.c/1.1/Wed Mar 22 23:11:09 2017//
+/fegetround.c/1.1/Wed Mar 22 23:11:09 2017//
+/feholdexcept.c/1.1/Wed Mar 22 23:11:09 2017//
+/feraiseexcept.c/1.1/Wed Mar 22 23:11:09 2017//
+/fesetenv.c/1.1/Wed Mar 22 23:11:09 2017//
+/fesetexceptflag.c/1.1/Wed Mar 22 23:11:09 2017//
+/fesetround.c/1.1/Wed Mar 22 23:11:09 2017//
+/fetestexcept.c/1.1/Wed Mar 22 23:11:09 2017//
+/feupdateenv.c/1.1/Wed Mar 22 23:11:09 2017//
+D

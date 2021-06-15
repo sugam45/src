@@ -1,0 +1,23 @@
+/Makefile.in/1.1.1.8/Wed Mar 18 18:59:34 2020//
+/Musings/1.1.1.1/Tue Jun 23 10:08:48 2009//
+/alias.c/1.3/Wed Mar 18 19:05:16 2020//
+/biff_notify.c/1.2/Tue Feb 14 01:16:45 2017//
+/biff_notify.h/1.1.1.1/Tue Jun 23 10:08:48 2009//
+/bounce_workaround.c/1.2/Tue Feb 14 01:16:45 2017//
+/command.c/1.2/Tue Feb 14 01:16:45 2017//
+/deliver_attr.c/1.1.1.1/Tue Jun 23 10:08:48 2009//
+/dotforward.c/1.2/Tue Feb 14 01:16:45 2017//
+/file.c/1.2/Tue Feb 14 01:16:45 2017//
+/forward.c/1.3/Wed Mar 18 19:05:16 2020//
+/include.c/1.1.1.2/Wed Jan  2 18:59:00 2013//
+/indirect.c/1.1.1.1/Tue Jun 23 10:08:48 2009//
+/local.c/1.3/Wed Mar 18 19:05:16 2020//
+/local.h/1.2/Tue Feb 14 01:16:45 2017//
+/local_expand.c/1.2/Tue Feb 14 01:16:45 2017//
+/mailbox.c/1.3/Wed Mar 18 19:05:16 2020//
+/maildir.c/1.1.1.2/Wed Jan  2 18:59:01 2013//
+/recipient.c/1.2/Tue Feb 14 01:16:45 2017//
+/resolve.c/1.1.1.2/Sun Jul  6 19:27:52 2014//
+/token.c/1.1.1.1/Tue Jun 23 10:08:49 2009//
+/unknown.c/1.7/Wed Mar 18 19:05:16 2020//
+D

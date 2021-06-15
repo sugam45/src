@@ -1,0 +1,21 @@
+/config-h.spatch/1.1.1.1/Sun May 24 19:36:36 2020//
+/dns_message_create.spatch/1.1.1.1/Fri Feb 19 16:37:08 2021//
+/dns_message_destroy.spatch/1.1.1.1/Fri Feb 19 16:37:08 2021//
+/dns_name_copy-with-result.spatch/1.1.1.1/Sun Nov 24 19:57:35 2019//
+/dns_name_copy.spatch/1.1.1.1/Sun Nov 24 19:57:35 2019//
+/dns_name_copynf.spatch/1.1.1.1/Sun Nov 24 19:57:35 2019//
+/dns_name_dup.disabled/1.1.1.1/Sun May 24 19:36:36 2020//
+/dns_rbtnodechain_init.disabled/1.1.1.1/Sun May 24 19:36:36 2020//
+/isc_buffer_allocate_never_fail.spatch/1.1.1.1/Sun May 24 19:36:36 2020//
+/isc_event_allocat_never_fail.spatch/1.1.1.1/Sun May 24 19:36:36 2020//
+/isc_mem_allocate_never_fail.spatch/1.1.1.1/Sun May 24 19:36:36 2020//
+/isc_mem_create_never_fail.disabled/1.1.1.1/Sun May 24 19:36:36 2020//
+/isc_mem_get_never_fail.spatch/1.1.1.1/Sun May 24 19:36:36 2020//
+/isc_mem_putanddetach.spatch/1.1.1.1/Sun May 24 19:36:36 2020//
+/isc_mem_strdup_never_fail.spatch/1.1.1.1/Sun May 24 19:36:36 2020//
+/isc_mempool_create_cannot_fail.cocci/1.1.1.1/Sun May 24 19:36:36 2020//
+/memcpy.spatch/1.1.1.1/Sun May 24 19:36:36 2020//
+/null-the-pointer-early.disabled/1.1.1.1/Sun May 24 19:36:36 2020//
+/return-void-from-void.spatch/1.1.1.1/Sun May 24 19:36:36 2020//
+/unreachable.spatch/1.1.1.1/Wed Jan  9 16:48:17 2019//
+D

@@ -1,0 +1,12 @@
+A D/arch////
+A D/compat////
+A D/crypto////
+A D/fs////
+A D/kern////
+A D/net////
+A D/netinet////
+A D/opencrypto////
+A D/uvm////
+R D/opencrypto////
+R D/netinet////
+R D/crypto////

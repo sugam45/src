@@ -1,0 +1,18 @@
+/if_le.c/1.9/Sun Jun 30 05:04:48 2019//
+/lcd.c/1.12/Tue Dec 29 17:17:14 2020//
+/lunafb.c/1.42/Sat Apr 24 23:36:40 2021//
+/lunaws.c/1.32/Sat Apr 24 23:36:40 2021//
+/omkbdmap.c/1.2/Sat Oct  4 14:42:41 2014//
+/omkbdmap.h/1.1/Sun Jul 20 11:14:56 2014//
+/omrasops.c/1.21/Wed Jul 31 02:09:02 2019//
+/omrasopsvar.h/1.5/Sun Sep 22 05:49:16 2019//
+/sio.c/1.14/Sat Apr 24 23:36:40 2021//
+/sioreg.h/1.4/Wed Jul 27 14:17:54 2011//
+/siotty.c/1.47/Tue Dec 29 17:17:14 2020//
+/siovar.h/1.8/Sun Feb  2 15:35:06 2014//
+/spc.c/1.10/Tue Jan 22 15:44:25 2013//
+/syscn.h/1.1/Fri Aug 21 10:48:06 2015//
+/timekeeper.c/1.15/Thu Nov 20 16:34:25 2014//
+/timekeeper.h/1.4/Tue Mar 18 18:20:41 2014//
+/xp.c/1.6/Tue Dec 29 17:17:14 2020//
+D

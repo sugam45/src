@@ -1,0 +1,8 @@
+A D/bootfloppy////
+A D/bootfloppy-common////
+A D/bootfloppy_com0////
+A D/bootfloppy_vga////
+A D/kernel////
+A D/kernel-ramdisk////
+A D/ramdisk////
+R D/ramdisk////

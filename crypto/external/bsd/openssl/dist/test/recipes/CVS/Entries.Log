@@ -1,0 +1,13 @@
+A D/04-test_pem_data////
+A D/10-test_bn_data////
+A D/15-test_ecparam_data////
+A D/15-test_mp_rsa_data////
+A D/30-test_evp_data////
+A D/80-test_cms_data////
+A D/80-test_ocsp_data////
+A D/90-test_gost_data////
+A D/90-test_includes_data////
+A D/90-test_sslapi_data////
+A D/90-test_store_data////
+A D/95-test_external_krb5_data////
+A D/95-test_external_pyca_data////

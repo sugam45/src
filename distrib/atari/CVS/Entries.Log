@@ -1,0 +1,9 @@
+A D/cdroms////
+A D/floppies////
+A D/inst////
+A D/inst-common////
+A D/miniroot////
+A D/misc////
+R D/miniroot////
+R D/inst-common////
+R D/inst////

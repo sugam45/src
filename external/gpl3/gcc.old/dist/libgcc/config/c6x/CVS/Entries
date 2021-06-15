@@ -1,0 +1,23 @@
+/c6x-abi.h/1.8/Fri Apr  9 23:14:43 2021//
+/crti.S/1.8/Fri Apr  9 23:14:43 2021//
+/crtn.S/1.8/Fri Apr  9 23:14:43 2021//
+/eqd.c/1.8/Fri Apr  9 23:14:43 2021//
+/eqf.c/1.8/Fri Apr  9 23:14:43 2021//
+/ged.c/1.8/Fri Apr  9 23:14:43 2021//
+/gef.c/1.8/Fri Apr  9 23:14:43 2021//
+/gtd.c/1.8/Fri Apr  9 23:14:43 2021//
+/gtf.c/1.8/Fri Apr  9 23:14:43 2021//
+/led.c/1.8/Fri Apr  9 23:14:43 2021//
+/lef.c/1.8/Fri Apr  9 23:14:43 2021//
+/lib1funcs.S/1.8/Fri Apr  9 23:14:43 2021//
+/libgcc-eabi.ver/1.8/Fri Apr  9 23:14:43 2021//
+/libunwind.S/1.6/Fri Apr  9 23:14:43 2021//
+/ltd.c/1.8/Fri Apr  9 23:14:43 2021//
+/ltf.c/1.8/Fri Apr  9 23:14:43 2021//
+/pr-support.c/1.8/Fri Apr  9 23:14:43 2021//
+/sfp-machine.h/1.8/Fri Apr  9 23:14:43 2021//
+/t-elf/1.5/Thu Sep 26 08:02:50 2019//
+/t-uclinux/1.5/Thu Sep 26 08:02:50 2019//
+/unwind-c6x.c/1.8/Fri Apr  9 23:14:43 2021//
+/unwind-c6x.h/1.8/Fri Apr  9 23:14:43 2021//
+D

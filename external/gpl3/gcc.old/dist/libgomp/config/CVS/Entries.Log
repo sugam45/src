@@ -1,0 +1,10 @@
+A D/bsd////
+A D/darwin////
+A D/hpux////
+A D/linux////
+A D/mingw32////
+A D/nvptx////
+A D/posix////
+A D/posix95////
+A D/rtems////
+R D/posix95////

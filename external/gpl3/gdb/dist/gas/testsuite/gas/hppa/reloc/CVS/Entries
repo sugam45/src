@@ -1,0 +1,19 @@
+/applybug.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/blebug.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/blebug2.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/blebug3.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/exitbug.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/fixupbug.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/funcrelocbug.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/labelopbug.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/longcall.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/picreloc.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/plabelbug.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/r_no_reloc.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/reduce.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/reduce2.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/reduce3.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/reloc.exp/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/roundmode.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+/selectorbug.s/1.1.1.1/Tue Sep 15 01:42:50 2020//
+D

@@ -1,0 +1,16 @@
+/e_sqrt.S/1.2/Fri Mar 27 23:35:40 2015//
+/e_sqrtf.S/1.2/Fri Mar 27 23:35:40 2015//
+/fenv.c/1.2/Wed Mar 22 23:11:08 2017//
+/lrint.S/1.2/Fri Mar 27 23:35:40 2015//
+/lrintf.S/1.2/Fri Mar 27 23:35:40 2015//
+/s_copysign.S/1.5/Sat Apr 13 17:18:26 2019//
+/s_copysignf.S/1.2/Fri Mar 27 23:35:40 2015//
+/s_fabs.S/1.2/Fri Mar 27 23:35:40 2015//
+/s_fabsf.S/1.2/Fri Mar 27 23:35:40 2015//
+/s_fma.S/1.2/Fri Mar 27 23:35:40 2015//
+/s_fmaf.S/1.2/Fri Mar 27 23:35:40 2015//
+/s_fmax.S/1.2/Fri Mar 27 23:35:40 2015//
+/s_fmaxf.S/1.2/Fri Mar 27 23:35:40 2015//
+/s_fmin.S/1.2/Fri Mar 27 23:35:40 2015//
+/s_fminf.S/1.2/Fri Mar 27 23:35:40 2015//
+D

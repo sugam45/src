@@ -1,0 +1,24 @@
+/LICENSE.txt/1.1.1.1/Sat Sep  5 07:52:10 2020//
+/algorithm_fwd.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/algorithm_impl.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/execution_defs.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/execution_impl.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/glue_algorithm_defs.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/glue_algorithm_impl.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/glue_execution_defs.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/glue_memory_defs.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/glue_memory_impl.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/glue_numeric_defs.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/glue_numeric_impl.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/memory_impl.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/numeric_fwd.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/numeric_impl.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/parallel_backend.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/parallel_backend_serial.h/1.1.1.1/Sat Apr 10 22:10:04 2021//
+/parallel_backend_tbb.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/parallel_backend_utils.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/parallel_impl.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/pstl_config.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/unseq_backend_simd.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+/utils.h/1.1.1.2/Sat Apr 10 22:10:04 2021//
+D

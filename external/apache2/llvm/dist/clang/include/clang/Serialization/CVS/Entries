@@ -1,0 +1,17 @@
+/ASTBitCodes.h/1.1.1.2/Sun May 30 01:25:22 2021//
+/ASTDeserializationListener.h/1.1.1.1/Fri Nov  8 14:30:12 2019//
+/ASTReader.h/1.1.1.2/Sun May 30 01:25:22 2021//
+/ASTRecordReader.h/1.1.1.1/Sun May 30 01:25:22 2021//
+/ASTRecordWriter.h/1.1.1.1/Sun May 30 01:25:22 2021//
+/ASTWriter.h/1.1.1.2/Sun May 30 01:25:22 2021//
+/CMakeLists.txt/1.1.1.1/Fri Nov  8 14:30:12 2019//
+/ContinuousRangeMap.h/1.1.1.2/Sun May 30 01:25:22 2021//
+/GlobalModuleIndex.h/1.1.1.1/Fri Nov  8 14:30:12 2019//
+/InMemoryModuleCache.h/1.1.1.1/Fri Nov  8 14:30:12 2019//
+/ModuleFile.h/1.1.1.1/Sun May 30 01:25:22 2021//
+/ModuleFileExtension.h/1.1.1.2/Sun May 30 01:25:22 2021//
+/ModuleManager.h/1.1.1.2/Sun May 30 01:25:22 2021//
+/PCHContainerOperations.h/1.1.1.1/Fri Nov  8 14:30:12 2019//
+/SerializationDiagnostic.h/1.1.1.1/Fri Nov  8 14:30:12 2019//
+/TypeBitCodes.def/1.1.1.1/Sun May 30 01:25:22 2021//
+D

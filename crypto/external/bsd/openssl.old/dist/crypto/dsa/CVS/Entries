@@ -1,0 +1,20 @@
+/Makefile/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/README/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/dsa.h/1.6/Tue Feb  6 19:58:30 2018//
+/dsa_ameth.c/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/dsa_asn1.c/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/dsa_depr.c/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/dsa_err.c/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/dsa_gen.c/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/dsa_key.c/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/dsa_lib.c/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/dsa_locl.h/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/dsa_ossl.c/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/dsa_pmeth.c/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/dsa_prn.c/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/dsa_sign.c/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/dsa_vrf.c/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/dsagen.c/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/dsatest.c/1.1.1.1/Sat Feb  3 22:43:43 2018//
+/fips186a.txt/1.1.1.1/Sat Feb  3 22:43:43 2018//
+D

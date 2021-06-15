@@ -1,0 +1,22 @@
+/CMakeLists.txt/1.1.1.2/Fri Dec  4 18:09:14 2020//
+/assert_get.c/1.1.1.2/Fri Dec  4 18:09:14 2020//
+/assert_verify.c/1.1.1.2/Fri Dec  4 18:09:14 2020//
+/base64.c/1.1.1.2/Fri Dec  4 18:09:14 2020//
+/bio.c/1.1.1.1/Tue Mar  3 00:11:48 2020//
+/cred_make.c/1.1.1.2/Fri Dec  4 18:09:14 2020//
+/cred_verify.c/1.1.1.2/Fri Dec  4 18:09:14 2020//
+/credman.c/1.1.1.2/Fri Dec  4 18:09:14 2020//
+/extern.h/1.1.1.2/Fri Dec  4 18:09:14 2020//
+/fido2-assert.c/1.1.1.2/Fri Dec  4 18:09:14 2020//
+/fido2-attach.sh/1.1.1.1/Fri Dec  4 18:09:14 2020//
+/fido2-cred.c/1.1.1.2/Fri Dec  4 18:09:14 2020//
+/fido2-detach.sh/1.1.1.1/Fri Dec  4 18:09:14 2020//
+/fido2-token.c/1.1.1.2/Fri Dec  4 18:09:14 2020//
+/fido2-unprot.sh/1.1.1.1/Fri Dec  4 18:09:14 2020//
+/include_check.sh/1.1.1.2/Fri Dec  4 18:09:14 2020//
+/macos_pkg.sh/1.1.1.1/Tue Mar  3 00:11:48 2020//
+/pin.c/1.1.1.1/Tue Mar  3 00:11:48 2020//
+/test.sh/1.1.1.1/Tue Mar  3 00:11:48 2020//
+/token.c/1.1.1.2/Fri Dec  4 18:09:14 2020//
+/util.c/1.1.1.2/Fri Dec  4 18:09:14 2020//
+D

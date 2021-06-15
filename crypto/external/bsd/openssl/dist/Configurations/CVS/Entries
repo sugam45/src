@@ -1,0 +1,20 @@
+/00-base-templates.conf/1.1.1.5/Thu Jan 23 02:47:59 2020//
+/10-main.conf/1.1.1.9/Sat Feb 20 03:12:11 2021//
+/15-android.conf/1.1.1.4/Sun Mar 22 00:49:02 2020//
+/15-ios.conf/1.1.1.3/Thu Jan 23 02:47:59 2020//
+/50-djgpp.conf/1.1.1.2/Sun Sep 23 13:17:39 2018//
+/50-haiku.conf/1.1.1.2/Sun Sep 23 13:17:39 2018//
+/50-masm.conf/1.1.1.2/Sun Sep 23 13:17:39 2018//
+/50-win-onecore.conf/1.1.1.4/Sun Mar 22 00:49:02 2020//
+/INTERNALS.Configure/1.1.1.1/Thu Feb  8 20:56:47 2018//
+/README/1.1.1.5/Tue Mar 12 16:44:04 2019//
+/README.design/1.1.1.3/Tue Mar 12 16:44:04 2019//
+/common.tmpl/1.1.1.4/Sat Dec  8 22:33:10 2018//
+/common0.tmpl/1.1.1.3/Thu Jan 23 02:47:59 2020//
+/descrip.mms.tmpl/1.1.1.7/Sat Feb 20 03:12:11 2021//
+/shared-info.pl/1.1.1.1/Sun Sep 23 13:17:39 2018//
+/unix-Makefile.tmpl/1.1.1.11/Thu Mar 25 18:27:01 2021//
+/unix-checker.pm/1.1.1.1/Thu Feb  8 20:56:47 2018//
+/windows-checker.pm/1.1.1.2/Sat Aug 18 08:31:05 2018//
+/windows-makefile.tmpl/1.1.1.7/Thu Dec 10 00:12:35 2020//
+D

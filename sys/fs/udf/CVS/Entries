@@ -1,0 +1,20 @@
+/Makefile/1.1/Thu Feb  2 15:19:15 2006//
+/ecma167-udf.h/1.16/Thu Aug  9 13:49:30 2018//
+/files.udf/1.6/Sat Oct 11 06:42:19 2014//
+/udf.h/1.52/Tue May 24 09:55:57 2016//
+/udf_allocation.c/1.41/Thu Apr 23 21:47:08 2020//
+/udf_bswap.h/1.8/Thu Oct 22 21:50:01 2009//
+/udf_mount.h/1.4/Wed Oct 16 21:52:22 2019//
+/udf_osta.c/1.10/Mon Aug  5 17:02:54 2013//
+/udf_osta.h/1.4/Wed May 14 16:49:48 2008//
+/udf_readwrite.c/1.12/Tue May 24 09:55:57 2016//
+/udf_rename.c/1.13/Fri Jan 17 20:08:08 2020//
+/udf_strat_bootstrap.c/1.5/Tue May 24 09:55:57 2016//
+/udf_strat_direct.c/1.14/Tue May 24 09:55:57 2016//
+/udf_strat_rmw.c/1.28/Tue May 24 09:55:57 2016//
+/udf_strat_sequential.c/1.15/Tue May 24 09:55:57 2016//
+/udf_subr.c/1.153/Tue Apr 13 06:25:49 2021//
+/udf_subr.h/1.21/Fri Jan 17 20:08:08 2020//
+/udf_vfsops.c/1.80/Tue Apr 14 12:47:44 2020//
+/udf_vnops.c/1.114/Sat Jun 27 17:29:18 2020//
+D
