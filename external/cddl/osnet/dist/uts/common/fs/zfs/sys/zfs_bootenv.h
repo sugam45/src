@@ -24,16 +24,18 @@
 extern "C" {
 #endif
 
-#define BOOTENV_VERSION		"version"
-
+#define BOOTENV_VERSION  	"version"
 
 #define BE_ILLUMOS_VENDOR	"illumos"
+
 #ifdef __NETBSDBSD__
-#define BE_NETBSD_VENDOR	"netbsd"
+#define BE_NETBSD_VENDOR 	"netbsd"
+
 #ifdef __FreeBSD__
 #define BE_FREEBSD_VENDOR	"freebsd"
-#define BE_GRUB_VENDOR		"grub"
-#define BE_LINUX_VENDOR		"linux"
+
+#define BE_GRUB_VENDOR   	"grub"
+#define BE_LINUX_VENDOR  	"linux"
 
 #include "zfs_bootenv_os.h"
 
