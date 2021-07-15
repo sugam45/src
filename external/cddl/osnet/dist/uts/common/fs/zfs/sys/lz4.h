@@ -32,7 +32,7 @@
  */
 
 #ifndef _LZ4_H
-#define	_LZ4_H
+#define _LZ4_H
 
 #include <sys/types.h>
 

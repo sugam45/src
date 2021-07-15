@@ -14,7 +14,7 @@
  */
 
 #ifndef _ZFS_BOOTENV_H
-#define	_ZFS_BOOTENV_H
+#define _ZFS_BOOTENV_H
 
 /*
  * Define macros for label bootenv nvlist pair keys.
@@ -24,27 +24,31 @@
 extern "C" {
 #endif
 
-#define	BOOTENV_VERSION		"version"
+#define BOOTENV_VERSION		"version"
 
-#define	BE_ILLUMOS_VENDOR	"illumos"
-#define	BE_NETBSD_VENDOR	"netbsd"
-#define	BE_GRUB_VENDOR		"grub"
-#define	BE_LINUX_VENDOR		"linux"
+
+#define BE_ILLUMOS_VENDOR	"illumos"
+#ifdef __NETBSDBSD__
+#define BE_NETBSD_VENDOR	"netbsd"
+#ifdef __FreeBSD__
+#define BE_FREEBSD_VENDOR	"freebsd"
+#define BE_GRUB_VENDOR		"grub"
+#define BE_LINUX_VENDOR		"linux"
 
 #include "zfs_bootenv_os.h"
 
-#define	GRUB_ENVMAP		BE_GRUB_VENDOR ":" "envmap"
+#define GRUB_ENVMAP		BE_GRUB_VENDOR ":" "envmap"
 
-#define	NETBSD_BOOTONCE	BE_NETBSD_VENDOR ":" "bootonce"
-#define	NETBSD_BOOTONCE_USED	BE_NETBSD_VENDOR ":" "bootonce-used"
-#define	NETBSD_NVSTORE		BE_NETBSD_VENDOR ":" "nvstore"
-#define	ILLUMOS_BOOTONCE	BE_ILLUMOS_VENDOR ":" "bootonce"
-#define	ILLUMOS_BOOTONCE_USED	BE_ILLUMOS_VENDOR ":" "bootonce-used"
-#define	ILLUMOS_NVSTORE		BE_ILLUMOS_VENDOR ":" "nvstore"
+#define NETBSD_BOOTONCE	BE_NETBSD_VENDOR ":" "bootonce"
+#define NETBSD_BOOTONCE_USED	BE_NETBSD_VENDOR ":" "bootonce-used"
+#define NETBSD_NVSTORE		BE_NETBSD_VENDOR ":" "nvstore"
+#define ILLUMOS_BOOTONCE	BE_ILLUMOS_VENDOR ":" "bootonce"
+#define ILLUMOS_BOOTONCE_USED	BE_ILLUMOS_VENDOR ":" "bootonce-used"
+#define ILLUMOS_NVSTORE		BE_ILLUMOS_VENDOR ":" "nvstore"
 
-#define	OS_BOOTONCE		BOOTENV_OS ":" "bootonce"
-#define	OS_BOOTONCE_USED	BOOTENV_OS ":" "bootonce-used"
-#define	OS_NVSTORE		BOOTENV_OS ":" "nvstore"
+#define OS_BOOTONCE		BOOTENV_OS ":" "bootonce"
+#define OS_BOOTONCE_USED	BOOTENV_OS ":" "bootonce-used"
+#define OS_NVSTORE		BOOTENV_OS ":" "nvstore"
 
 #ifdef __cplusplus
 }

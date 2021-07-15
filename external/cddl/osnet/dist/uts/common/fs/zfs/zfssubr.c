@@ -22,13 +22,20 @@
  * Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
  * Use is subject to license terms.
  */
-
-__RCSID("$NETBSD: zfssubr.c, v 1.1 2021/07/13 19:34:06 sugam Exp $");
+#include <sys/cdefs.h>
+#ifdef __FBSDID
+__FBSDID("$FreeBSD: head/bin/ln/ln.c 251261 2013-06-02 17:55:00Z eadler $");
+#else
+__RCSID("$NetBSD: zfssubr.c,v 1.1 2021/07/13 15:21:40 sugam Exp $");
+#endif
 
 #include <zfeature_common.h>
-#include <sys/dmu.h>
-
-#include "blkptr.c"
+#include <sys/zfs_context.h>
+#include <sys/skein.h>
+#include <sys/spa_impl.h>
+#include <sys/vdev.h>
+#include <sys/vdev_impl.h>
+#include <sys/lz4.h>
 
 #include "zfs_fletcher.c"
 #include "sha256.c"
@@ -36,19 +43,20 @@ __RCSID("$NETBSD: zfssubr.c, v 1.1 2021/07/13 19:34:06 sugam Exp $");
 #include "lzjb.c"
 #include "zle.c"
 
-static uint64_t zfs_crc64_table[256];
+uint64_t zfs_crc64_table[256];
 
 #ifndef __DECONST
 #define __DECONST(type, var)    ((type)(uintptr_t)(const void *)(var))
 #endif
 
-#define	ASSERT3S(x, y, z)	((void)0)
-#define	ASSERT3U(x, y, z)	((void)0)
-#define	ASSERT3P(x, y, z)	((void)0)
-#define	ASSERT0(x)		((void)0)
-#define	ASSERT(x)		((void)0)
+#define ASSERT3S(x, y, z)	((void)0)
+#define ASSERT3U(x, y, z)	((void)0)
+#define ASSERT3P(x, y, z)	((void)0)
+#define ASSERT0(x)		((void)0)
+#define ASSERT(x)		((void)0)
+#define ZAP_HASHBITS 28
 
-#define	panic(...)	do {						\
+#define panic(...)	do {						\
 	printf(__VA_ARGS__);						\
 	for (;;) ;							\
 } while (0)
@@ -111,45 +119,45 @@ typedef struct zio_checksum_info {
 	const char			*ci_name;	/* descriptive name */
 } zio_checksum_info_t;
 
-
-
-static zio_checksum_info_t zio_checksum_table[ZIO_CHECKSUM_FUNCTIONS] = {
+zio_checksum_info_t zio_checksum_table[ZIO_CHECKSUM_FUNCTIONS] = {
 	{{NULL, NULL}, NULL, NULL, 0, "inherit"},
 	{{NULL, NULL}, NULL, NULL, 0, "on"},
-	{{zio_checksum_off,     zio_checksum_off},
-        NULL, NULL, 0, "off"},
-	{{zio_checksum_SHA256,     zio_checksum_SHA256},
-        NULL, NULL, ZCHECKSUM_FLAG_METADATA | ZCHECKSUM_FLAG_EMBEDDED,
-        "label"},
-	{{zio_checksum_SHA256,     zio_checksum_SHA256},
-        NULL, NULL, ZCHECKSUM_FLAG_METADATA | ZCHECKSUM_FLAG_EMBEDDED,
-        "gang_header"},
-	{{fletcher_2_native,     fletcher_2_byteswap},
-        NULL, NULL, ZCHECKSUM_FLAG_EMBEDDED, "zilog"},
-	{{fletcher_2_native,	fletcher_2_byteswap},
-        NULL, NULL, 0, "fletcher2"},
-	{{fletcher_4_native,		fletcher_4_byteswap},
-        NULL, NULL, ZCHECKSUM_FLAG_METADATA, "fletcher4"},
-	{{zio_checksum_SHA256,		zio_checksum_SHA256},
-        NULL, NULL, ZCHECKSUM_FLAG_METADATA | ZCHECKSUM_FLAG_DEDUP |
-	    ZCHECKSUM_FLAG_NOPWRITE, "SHA256"},
-	{{fletcher_4_native,		fletcher_4_byteswap},
-        NULL, NULL, ZCHECKSUM_FLAG_EMBEDDED, "zillog2"},
 	{{zio_checksum_off,		zio_checksum_off},
-        NULL, NULL, 0, "noparity"},
+	    NULL, NULL, 0, "off"},
+	{{zio_checksum_SHA256,		zio_checksum_SHA256},
+	    NULL, NULL, ZCHECKSUM_FLAG_METADATA | ZCHECKSUM_FLAG_EMBEDDED,
+	    "label"},
+	{{zio_checksum_SHA256,		zio_checksum_SHA256},
+	    NULL, NULL, ZCHECKSUM_FLAG_METADATA | ZCHECKSUM_FLAG_EMBEDDED,
+	    "gang_header"},
+	{{fletcher_2_native,		fletcher_2_byteswap},
+	    NULL, NULL, ZCHECKSUM_FLAG_EMBEDDED, "zilog"},
+	{{fletcher_2_native,		fletcher_2_byteswap},
+	    NULL, NULL, 0, "fletcher2"},
+	{{fletcher_4_native,		fletcher_4_byteswap},
+	    NULL, NULL, ZCHECKSUM_FLAG_METADATA, "fletcher4"},
+	{{zio_checksum_SHA256,		zio_checksum_SHA256},
+	    NULL, NULL, ZCHECKSUM_FLAG_METADATA | ZCHECKSUM_FLAG_DEDUP |
+	    ZCHECKSUM_FLAG_NOPWRITE, "sha256"},
+	{{fletcher_4_native,		fletcher_4_byteswap},
+	    NULL, NULL, ZCHECKSUM_FLAG_EMBEDDED, "zilog2"},
+	{{zio_checksum_off,		zio_checksum_off},
+	    NULL, NULL, 0, "noparity"},
 #ifndef __NetBSD__
 	{{zio_checksum_SHA512_native,	zio_checksum_SHA512_byteswap},
 	    NULL, NULL, ZCHECKSUM_FLAG_METADATA | ZCHECKSUM_FLAG_DEDUP |
-	    ZCHECKSUM_FLAG_NOPWRITE, "SHA512"},
-	{{zio_checksum_skein_native, zio_checksum_skein_byteswap},
+	    ZCHECKSUM_FLAG_NOPWRITE, "sha512"},
+	{{zio_checksum_skein_native,	zio_checksum_skein_byteswap},
 	    zio_checksum_skein_tmpl_init, zio_checksum_skein_tmpl_free,
 	    ZCHECKSUM_FLAG_METADATA | ZCHECKSUM_FLAG_DEDUP |
 	    ZCHECKSUM_FLAG_SALTED | ZCHECKSUM_FLAG_NOPWRITE, "skein"},
 #endif
-    /* no edonr for now */
-	{{NULL, NULL},
-        NULL, NULL, ZCHECKSUM_FLAG_METADATA | ZCHECKSUM_FLAG_SALTED |
-        ZCHECKSUM_FLAG_NOPWRITE, "edonr"}
+#ifdef illumos
+	{{zio_checksum_edonr_native,	zio_checksum_edonr_byteswap},
+	    zio_checksum_edonr_tmpl_init, zio_checksum_edonr_tmpl_free,
+	    ZCHECKSUM_FLAG_METADATA | ZCHECKSUM_FLAG_SALTED |
+	    ZCHECKSUM_FLAG_NOPWRITE, "edonr"},
+#endif
 };
 
 /*
@@ -192,7 +200,7 @@ static zio_compress_info_t zio_compress_table[ZIO_COMPRESS_FUNCTIONS] = {
 	{NULL,			lz4_decompress,		0,	"lz4"},
 };
 
-static void
+void
 byteswap_uint64_array(void *vbuf, size_t size)
 {
 	uint64_t *buf = vbuf;
@@ -210,7 +218,7 @@ byteswap_uint64_array(void *vbuf, size_t size)
  * a tuple which is guaranteed to be unique for the life of the pool.
  */
 static void
-zio_checksum_gang_verifier(zio_cksum_t *zcp, const blkptr_t *bp)
+zio_checksum_gang_verifier(zio_cksum_t *zcp, blkptr_t *bp)
 {
 	dva_t *dva = BP_IDENTITY(bp);
 	uint64_t txg = BP_PHYSICAL_BIRTH(bp);
@@ -272,9 +280,8 @@ zio_checksum_templates_free(spa_t *spa)
 }
 
 static int
-zio_checksum_verify(const spa_t *spa, const blkptr_t *bp, void *data)
+zio_checksum_verify(const spa_t *spa, blkptr_t *bp, void *data)
 {
-	uint64_t size;
 	unsigned int checksum;
 	zio_checksum_info_t *ci;
 	void *ctx = NULL;
@@ -387,6 +394,7 @@ typedef struct raidz_col {
 	uint64_t rc_offset;		/* device offset */
 	uint64_t rc_size;		/* I/O size */
 	void *rc_data;			/* I/O data */
+	void *rc_gdata;			/* used to store the "good" version */
 	int rc_error;			/* I/O error for this device */
 	uint8_t rc_tried;		/* Did we attempt this I/O column? */
 	uint8_t rc_skipped;		/* Did we skip this I/O column? */
@@ -402,18 +410,19 @@ typedef struct raidz_map {
 	uint64_t rm_firstdatacol;	/* First data column/parity count */
 	uint64_t rm_nskip;		/* Skipped sectors for padding */
 	uint64_t rm_skipstart;		/* Column index of padding start */
+	void *rm_datacopy;		/* rm_asize-buffer of copied data */
 	uintptr_t rm_reports;		/* # of referencing checksum reports */
 	uint8_t	rm_freed;		/* map no longer has referencing ZIO */
 	uint8_t	rm_ecksuminjected;	/* checksum error was injected */
 	raidz_col_t rm_col[1];		/* Flexible array of I/O columns */
 } raidz_map_t;
 
-#define	VDEV_RAIDZ_P		0
-#define	VDEV_RAIDZ_Q		1
-#define	VDEV_RAIDZ_R		2
+#define VDEV_RAIDZ_P		0
+#define VDEV_RAIDZ_Q		1
+#define VDEV_RAIDZ_R		2
 
-#define	VDEV_RAIDZ_MUL_2(x)	(((x) << 1) ^ (((x) & 0x80) ? 0x1d : 0))
-#define	VDEV_RAIDZ_MUL_4(x)	(VDEV_RAIDZ_MUL_2(VDEV_RAIDZ_MUL_2(x)))
+#define VDEV_RAIDZ_MUL_2(x)	(((x) << 1) ^ (((x) & 0x80) ? 0x1d : 0))
+#define VDEV_RAIDZ_MUL_4(x)	(VDEV_RAIDZ_MUL_2(VDEV_RAIDZ_MUL_2(x)))
 
 /*
  * We provide a mechanism to perform the field multiplication operation on a
@@ -421,7 +430,7 @@ typedef struct raidz_map {
  * creating a mask from the top bit in each byte and using that to
  * conditionally apply the XOR of 0x1d.
  */
-#define	VDEV_RAIDZ_64MUL_2(x, mask) \
+#define VDEV_RAIDZ_64MUL_2(x, mask) \
 { \
 	(mask) = (x) & 0x8080808080808080ULL; \
 	(mask) = ((mask) << 1) - ((mask) >> 7); \
@@ -429,13 +438,13 @@ typedef struct raidz_map {
 	    ((mask) & 0x1d1d1d1d1d1d1d1dULL); \
 }
 
-#define	VDEV_RAIDZ_64MUL_4(x, mask) \
+#define VDEV_RAIDZ_64MUL_4(x, mask) \
 { \
 	VDEV_RAIDZ_64MUL_2((x), mask); \
 	VDEV_RAIDZ_64MUL_2((x), mask); \
 }
 
-#define	VDEV_LABEL_OFFSET(x)	(x + VDEV_LABEL_START_SIZE)
+#define VDEV_LABEL_OFFSET(x)	(x + VDEV_LABEL_START_SIZE)
 
 /*
  * These two tables represent powers and logs of 2 in the Galois field defined
@@ -986,7 +995,7 @@ vdev_raidz_matrix_reconstruct(raidz_map_t *rm, int n, int nmissing,
 
 	log = 0;	/* gcc */
 	psize = sizeof (invlog[0][0]) * n * nmissing;
-	p = malloc(psize);
+	p = kmem_alloc(psize, KM_SLEEP);
 	if (p == NULL) {
 		printf("Out of memory\n");
 		return;
@@ -1046,7 +1055,7 @@ vdev_raidz_matrix_reconstruct(raidz_map_t *rm, int n, int nmissing,
 		}
 	}
 
-	free(p);
+	kmem_free(p, psize);
 }
 
 static int
@@ -1107,7 +1116,7 @@ vdev_raidz_reconstruct_general(raidz_map_t *rm, int *tgts, int ntgts)
 
 	psize = (sizeof (rows[0][0]) + sizeof (invrows[0][0])) *
 	    nmissing_rows * n + sizeof (used[0]) * n;
-	p = malloc(psize);
+	p = kmem_alloc(psize, KM_SLEEP);
 	if (p == NULL) {
 		printf("Out of memory\n");
 		return (code);
@@ -1154,7 +1163,7 @@ vdev_raidz_reconstruct_general(raidz_map_t *rm, int *tgts, int ntgts)
 	vdev_raidz_matrix_reconstruct(rm, n, nmissing_rows, missing_rows,
 	    invrows, used);
 
-	free(p);
+	kmem_free(p, psize);
 
 	return (code);
 }
@@ -1355,23 +1364,14 @@ vdev_raidz_map_free(raidz_map_t *rm)
 {
 	int c;
 
-	for (c = rm->rm_firstdatacol - 1; c >= 0; c--)
-		free(rm->rm_col[c].rc_data);
+	size_t size = 0;
+	for (c = rm->rm_firstdatacol; c < rm->rm_cols; c++)
+		size += rm->rm_col[c].rc_size;
 
-	free(rm);
-}
+	if (rm->rm_datacopy != NULL)
+		zio_buf_free(rm->rm_datacopy, size);
 
-static vdev_t *
-vdev_child(vdev_t *pvd, uint64_t devidx)
-{
-	vdev_t *cvd;
-
-	STAILQ_FOREACH(cvd, &pvd->v_children, v_childlink) {
-		if (cvd->v_id == devidx)
-			break;
-	}
-
-	return (cvd);
+	kmem_free(rm, offsetof(raidz_map_t, rm_col[rm->rm_scols]));
 }
 
 /*
@@ -1379,7 +1379,7 @@ vdev_child(vdev_t *pvd, uint64_t devidx)
  * any ereports we generate can note it.
  */
 static int
-raidz_checksum_verify(const spa_t *spa, const blkptr_t *bp, void *data,
+raidz_checksum_verify(const spa_t *spa, blkptr_t *bp, void *data,
     uint64_t size)
 {
 	return (zio_checksum_verify(spa, bp, data));
@@ -1402,7 +1402,7 @@ raidz_parity_verify(raidz_map_t *rm)
 		rc = &rm->rm_col[c];
 		if (!rc->rc_tried || rc->rc_error != 0)
 			continue;
-		orig[c] = malloc(rc->rc_size);
+		orig[c] = zio_buf_alloc(rc->rc_size);
 		if (orig[c] != NULL) {
 			bcopy(rc->rc_data, orig[c], rc->rc_size);
 		} else {
@@ -1421,7 +1421,7 @@ raidz_parity_verify(raidz_map_t *rm)
 			rc->rc_error = ECKSUM;
 			ret++;
 		}
-		free(orig[c]);
+		zio_buf_free(orig[c], rc->rc_size);
 	}
 
 	return (ret);
@@ -1436,7 +1436,7 @@ raidz_parity_verify(raidz_map_t *rm)
  * cases we'd only use parity information in column 0.
  */
 static int
-vdev_raidz_combrec(const spa_t *spa, raidz_map_t *rm, const blkptr_t *bp,
+vdev_raidz_combrec(const spa_t *spa, raidz_map_t *rm, blkptr_t *bp,
     void *data, off_t offset, uint64_t bytes, int total_errors, int data_errors)
 {
 	raidz_col_t *rc;
@@ -1489,7 +1489,7 @@ vdev_raidz_combrec(const spa_t *spa, raidz_map_t *rm, const blkptr_t *bp,
 			ASSERT(orig[i] != NULL);
 		}
 
-		orig[n - 1] = malloc(rm->rm_col[0].rc_size);
+		orig[n - 1] = zio_buf_alloc(rm->rm_col[0].rc_size);
 		if (orig[n - 1] == NULL) {
 			ret = ENOMEM;
 			goto done;
@@ -1576,273 +1576,8 @@ vdev_raidz_combrec(const spa_t *spa, raidz_map_t *rm, const blkptr_t *bp,
 	n--;
 done:
 	for (i = n - 1; i >= 0; i--) {
-		free(orig[i]);
+		zio_buf_free(orig[i], rm->rm_col[0].rc_size);
 	}
 
 	return (ret);
-}
-
-static int
-vdev_raidz_read(vdev_t *vd, const blkptr_t *bp, void *data,
-    off_t offset, size_t bytes)
-{
-	vdev_t *tvd = vd->v_top;
-	vdev_t *cvd;
-	raidz_map_t *rm;
-	raidz_col_t *rc;
-	int c, error;
-	int unexpected_errors;
-	int parity_errors;
-	int parity_untried;
-	int data_errors;
-	int total_errors;
-	int n;
-	int tgts[VDEV_RAIDZ_MAXPARITY];
-	int code;
-
-	rc = NULL;	/* gcc */
-	error = 0;
-
-	rm = vdev_raidz_map_alloc(data, offset, bytes, tvd->v_ashift,
-	    vd->v_nchildren, vd->v_nparity);
-	if (rm == NULL)
-		return (ENOMEM);
-
-	/*
-	 * Iterate over the columns in reverse order so that we hit the parity
-	 * last -- any errors along the way will force us to read the parity.
-	 */
-	for (c = rm->rm_cols - 1; c >= 0; c--) {
-		rc = &rm->rm_col[c];
-		cvd = vdev_child(vd, rc->rc_devidx);
-		if (cvd == NULL || cvd->v_state != VDEV_STATE_HEALTHY) {
-			if (c >= rm->rm_firstdatacol)
-				rm->rm_missingdata++;
-			else
-				rm->rm_missingparity++;
-			rc->rc_error = ENXIO;
-			rc->rc_tried = 1;	/* don't even try */
-			rc->rc_skipped = 1;
-			continue;
-		}
-#if 0		/* XXX: Too hard for the boot code. */
-		if (vdev_dtl_contains(cvd, DTL_MISSING, zio->io_txg, 1)) {
-			if (c >= rm->rm_firstdatacol)
-				rm->rm_missingdata++;
-			else
-				rm->rm_missingparity++;
-			rc->rc_error = ESTALE;
-			rc->rc_skipped = 1;
-			continue;
-		}
-#endif
-		if (c >= rm->rm_firstdatacol || rm->rm_missingdata > 0) {
-			rc->rc_error = cvd->v_read(cvd, NULL, rc->rc_data,
-			    rc->rc_offset, rc->rc_size);
-			rc->rc_tried = 1;
-			rc->rc_skipped = 0;
-		}
-	}
-
-reconstruct:
-	unexpected_errors = 0;
-	parity_errors = 0;
-	parity_untried = 0;
-	data_errors = 0;
-	total_errors = 0;
-
-	ASSERT(rm->rm_missingparity <= rm->rm_firstdatacol);
-	ASSERT(rm->rm_missingdata <= rm->rm_cols - rm->rm_firstdatacol);
-
-	for (c = 0; c < rm->rm_cols; c++) {
-		rc = &rm->rm_col[c];
-
-		if (rc->rc_error) {
-			ASSERT(rc->rc_error != ECKSUM);	/* child has no bp */
-
-			if (c < rm->rm_firstdatacol)
-				parity_errors++;
-			else
-				data_errors++;
-
-			if (!rc->rc_skipped)
-				unexpected_errors++;
-
-			total_errors++;
-		} else if (c < rm->rm_firstdatacol && !rc->rc_tried) {
-			parity_untried++;
-		}
-	}
-
-	/*
-	 * There are three potential phases for a read:
-	 *	1. produce valid data from the columns read
-	 *	2. read all disks and try again
-	 *	3. perform combinatorial reconstruction
-	 *
-	 * Each phase is progressively both more expensive and less likely to
-	 * occur. If we encounter more errors than we can repair or all phases
-	 * fail, we have no choice but to return an error.
-	 */
-
-	/*
-	 * If the number of errors we saw was correctable -- less than or equal
-	 * to the number of parity disks read -- attempt to produce data that
-	 * has a valid checksum. Naturally, this case applies in the absence of
-	 * any errors.
-	 */
-	if (total_errors <= rm->rm_firstdatacol - parity_untried) {
-		int rv;
-
-		if (data_errors == 0) {
-			rv = raidz_checksum_verify(vd->v_spa, bp, data, bytes);
-			if (rv == 0) {
-				/*
-				 * If we read parity information (unnecessarily
-				 * as it happens since no reconstruction was
-				 * needed) regenerate and verify the parity.
-				 * We also regenerate parity when resilvering
-				 * so we can write it out to the failed device
-				 * later.
-				 */
-				if (parity_errors + parity_untried <
-				    rm->rm_firstdatacol) {
-					n = raidz_parity_verify(rm);
-					unexpected_errors += n;
-					ASSERT(parity_errors + n <=
-					    rm->rm_firstdatacol);
-				}
-				goto done;
-			}
-		} else {
-			/*
-			 * We either attempt to read all the parity columns or
-			 * none of them. If we didn't try to read parity, we
-			 * wouldn't be here in the correctable case. There must
-			 * also have been fewer parity errors than parity
-			 * columns or, again, we wouldn't be in this code path.
-			 */
-			ASSERT(parity_untried == 0);
-			ASSERT(parity_errors < rm->rm_firstdatacol);
-
-			/*
-			 * Identify the data columns that reported an error.
-			 */
-			n = 0;
-			for (c = rm->rm_firstdatacol; c < rm->rm_cols; c++) {
-				rc = &rm->rm_col[c];
-				if (rc->rc_error != 0) {
-					ASSERT(n < VDEV_RAIDZ_MAXPARITY);
-					tgts[n++] = c;
-				}
-			}
-
-			ASSERT(rm->rm_firstdatacol >= n);
-
-			code = vdev_raidz_reconstruct(rm, tgts, n);
-
-			rv = raidz_checksum_verify(vd->v_spa, bp, data, bytes);
-			if (rv == 0) {
-				/*
-				 * If we read more parity disks than were used
-				 * for reconstruction, confirm that the other
-				 * parity disks produced correct data. This
-				 * routine is suboptimal in that it regenerates
-				 * the parity that we already used in addition
-				 * to the parity that we're attempting to
-				 * verify, but this should be a relatively
-				 * uncommon case, and can be optimized if it
-				 * becomes a problem. Note that we regenerate
-				 * parity when resilvering so we can write it
-				 * out to failed devices later.
-				 */
-				if (parity_errors < rm->rm_firstdatacol - n) {
-					n = raidz_parity_verify(rm);
-					unexpected_errors += n;
-					ASSERT(parity_errors + n <=
-					    rm->rm_firstdatacol);
-				}
-
-				goto done;
-			}
-		}
-	}
-
-	/*
-	 * This isn't a typical situation -- either we got a read
-	 * error or a child silently returned bad data. Read every
-	 * block so we can try again with as much data and parity as
-	 * we can track down. If we've already been through once
-	 * before, all children will be marked as tried so we'll
-	 * proceed to combinatorial reconstruction.
-	 */
-	unexpected_errors = 1;
-	rm->rm_missingdata = 0;
-	rm->rm_missingparity = 0;
-
-	n = 0;
-	for (c = 0; c < rm->rm_cols; c++) {
-		rc = &rm->rm_col[c];
-
-		if (rc->rc_tried)
-			continue;
-
-		cvd = vdev_child(vd, rc->rc_devidx);
-		ASSERT(cvd != NULL);
-		rc->rc_error = cvd->v_read(cvd, NULL,
-		    rc->rc_data, rc->rc_offset, rc->rc_size);
-		if (rc->rc_error == 0)
-			n++;
-		rc->rc_tried = 1;
-		rc->rc_skipped = 0;
-	}
-	/*
-	 * If we managed to read anything more, retry the
-	 * reconstruction.
-	 */
-	if (n > 0)
-		goto reconstruct;
-
-	/*
-	 * At this point we've attempted to reconstruct the data given the
-	 * errors we detected, and we've attempted to read all columns. There
-	 * must, therefore, be one or more additional problems -- silent errors
-	 * resulting in invalid data rather than explicit I/O errors resulting
-	 * in absent data. We check if there is enough additional data to
-	 * possibly reconstruct the data and then perform combinatorial
-	 * reconstruction over all possible combinations. If that fails,
-	 * we're cooked.
-	 */
-	if (total_errors > rm->rm_firstdatacol) {
-		error = EIO;
-	} else if (total_errors < rm->rm_firstdatacol &&
-	    (code = vdev_raidz_combrec(vd->v_spa, rm, bp, data, offset, bytes,
-	     total_errors, data_errors)) != 0) {
-		/*
-		 * If we didn't use all the available parity for the
-		 * combinatorial reconstruction, verify that the remaining
-		 * parity is correct.
-		 */
-		if (code != (1 << rm->rm_firstdatacol) - 1)
-			(void) raidz_parity_verify(rm);
-	} else {
-		/*
-		 * We're here because either:
-		 *
-		 *	total_errors == rm_first_datacol, or
-		 *	vdev_raidz_combrec() failed
-		 *
-		 * In either case, there is enough bad data to prevent
-		 * reconstruction.
-		 *
-		 * Start checksum ereports for all children which haven't
-		 * failed, and the IO wasn't speculative.
-		 */
-		error = ECKSUM;
-	}
-
-done:
-	vdev_raidz_map_free(rm);
-
-	return (error);
 }
