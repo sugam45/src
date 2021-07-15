@@ -24,7 +24,7 @@
 #include <sys/zfs_context.h>
 #include <sys/zio.h>
 #ifdef _KERNEL
-#include <crypto/skein/skein.h>
+#include <sys/skein.h>
 #else
 #include <skein.h>
 #endif
